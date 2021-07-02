@@ -27,7 +27,7 @@ body {
 }
 
 .cover-container {
-  max-width: 90%;
+
 }
 
 .instagram-media.instagram-media-rendered {
@@ -73,7 +73,8 @@ body {
   position: relative;
   z-index: 1;
   background: inherit;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .frosted-glass:before {
