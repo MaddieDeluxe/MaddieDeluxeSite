@@ -32,47 +32,53 @@
     <link href="cover.css" rel="stylesheet">
 </head>
 
-<body class="d-flex h-100 text-center">
+<body class="text-center">
     <div class="container-fluid d-flex flex-column">
 
       <div class="row mt-5">
         <div class="col">
 
-          <div class="container-fluid">
-            <h1 class="display-4 font-weight-bold">My Downloads</h1>
+          <div class="container">
+            <h2 class="display-4 font-weight-bold">My Downloads</h1>
+        
+                  <div id="downloads" class="row">
 
-            <div class="card border-0 shadow-sm frosted-glass">
-              <div class="card-body">
-                
-                <div id="downloads" class="tile-container">
 
-                </div>
-
-              </div>
-            </div>
+                  </div>
+          
           </div>
 
         </div>
       </div>
 
-      <div class="modal fade" id="previewModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="previewModalTitle">Title</h5>
 
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
 
-            <div class="modal-body">
+    </div>
 
-              <p class="description"></p>
+    <div class="footer" style="height: 25vh;">
+
+    </div>
+</body>
+
+<div class="modal fade" id="previewModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header d-flex align-items-center">
+        <h2 class="modal-title" id="previewModalTitle">Title</h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+
+       
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
               <div id="previewCarousel"  class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" id="previewModalCarousel">
-
-
                 </div>
 
                 <a class="carousel-control-prev" href="#previewCarousel" role="button" data-slide="prev">
@@ -87,17 +93,20 @@
               </div>
             </div>
 
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <a class="btn download btn-primary">Download</a>
+            <div class="col-md-6">
+              <div class="d-flex flex-column h-100 justify-content-between">
+                <p class="description lead font-weight-bold alert alert-info d-block border-0 shadow-sm text-decoration-none"></p>
+                <div class="requirement"></div>
+                <a class="download alert font-weight-bold alert-success d-block border-0 shadow-sm text-decoration-none">Download</a>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
-
     </div>
-</body>
-
+  </div>
+</div>
 
 </html>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
