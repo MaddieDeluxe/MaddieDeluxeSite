@@ -28,3 +28,15 @@ const db = {
         'images': 2
     }
 }
+
+const storyPosts = [
+    'https://www.instagram.com/p/CRA44sIDLuK/?utm_source=ig_embed&amp;utm_campaign=loading',
+    'https://www.instagram.com/p/CRA44sIDLuK/?utm_source=ig_embed&amp;utm_campaign=loading'
+];
+const sims = {
+    'Akira Kibo': {},
+    'Karli Kibo': {},
+    'Solomon Kibo': {},
+    'Ale Caliente': {},
+    'Orren Kibo': {}
+}

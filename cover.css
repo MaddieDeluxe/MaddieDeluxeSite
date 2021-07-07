@@ -1,5 +1,6 @@
 :root {
   --accent-one: #ff00a5;
+  --accent-two: #7a00ff;
 }
 
 /*
@@ -164,4 +165,20 @@ body {
 h4#previewModalTitle {
   color: var(--accent-one);
   font-weight: bold;
+}
+
+
+
+a.nav-link {
+  color: var(--accent-two);
+  font-weight: bold;
+  font-style: italic;
+  font-variant: all-small-caps;
+  font-family: monospace;
+  font-size: xx-large;
+  transition: all .25s;
+}
+
+a.nav-link:hover {
+  color: var(--accent-one);
 }

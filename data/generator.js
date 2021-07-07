@@ -1,11 +1,45 @@
-$(document).ready(function(){
-    loadDownloads();
-  });
+var sectionContent = document.getElementById('SectionContent');
+var aboutContent = document.getElementById('BioHolder');
+var sectionTitle = document.getElementById('SectionTitle');
 
-function loadDownloads() {
+$(document).ready(function(){
+    showDownloads();
+    // showBio();
+});
+
+function showBio() {
+    $(aboutContent).load("/components/bio.html");
+}
+
+function showStory() {
+    sectionTitle.innerText = 'My Story';
+    var story = sectionContent;
+    story.innerHTML = '';
+
+    // for (const [index, element] of storyPosts.entries()) {
+    //     console.log(index, element);
+    //     var post = document.createElement('blockquote');
+    //     post.classList.add('instagram-media');
+    //     post.setAttribute('data-instgrm-permalink', element);
+    //     post.setAttribute('data-instgrm-version', "13");
+    //     story.appendChild(post);
+    // }
+
+    // let script = document.createElement('script');
+    // script.src = '//www.instagram.com/embed.js';
+    // script.setAttribute('async', true);
+    // story.appendChild(script);
+    
+}
+
+function showDownloads() {
+    sectionTitle.innerText = 'My Downloads';
+    var downloads = sectionContent;
+    downloads.innerHTML = '';
+
     for (const [key, value] of Object.entries(db)) {
         let holderNode = document.createElement("div");
-        holderNode.classList.add('col-md-3', 'download-holder');
+        holderNode.classList.add('col-md-4','col-lg-3', 'download-holder');
 
         let parentNode = document.createElement("a");
         parentNode.href = '#';
@@ -33,7 +67,6 @@ function loadDownloads() {
         parentNode.appendChild(body);
 
         holderNode.appendChild(parentNode);
-        var downloads = document.getElementById('downloads');
         downloads.appendChild(holderNode);
     }
 }
