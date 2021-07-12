@@ -50,24 +50,33 @@ const sims = {
         'name': 'Karli Kibo',
         'location': locations.WINDENBURG,
         'parents': '',
-        'spouse': 'Akira'}
-    // },
-    // 'Solomon': {
-    //     'name': 'Solomon Kibo',
-    //     'location': locations.WINDENBURG,
-    //     'parents': {
-    //         'mom': 'Karli',
-    //         'dad': 'Akira'
-    //     },
-    //     'spouse': ''
-    // },
-    // 'Orren': {
-    //     'name': 'Orren Kibo',
-    //     'location': locations.WINDENBURG,
-    //     'parents': {
-    //         'mom': 'Karli',
-    //         'dad': 'Akira'
-    //     },
-    //     'spouse': ''
-    // }
+        'spouse': 'Akira'
+    },
+    'Solomon': {
+        'name': 'Solomon Kibo',
+        'location': locations.WINDENBURG,
+        'parents': {
+            'mom': 'Karli',
+            'dad': 'Akira'
+        },
+        'spouse': ''
+    },
+    'Esther': {
+        'name': 'Esther Kibo',
+        'location': locations.WINDENBURG,
+        'parents': {
+            'mom': 'Karli',
+            'dad': 'Akira'
+        },
+        'spouse': ''
+    },
+    'Orren': {
+        'name': 'Orren Kibo',
+        'location': locations.WINDENBURG,
+        'parents': {
+            'mom': 'Karli',
+            'dad': 'Akira'
+        },
+        'spouse': ''
+    }
 }
