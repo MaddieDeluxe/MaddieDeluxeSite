@@ -3,6 +3,11 @@ const itemTypes = {
 	OTHER: "other"
 }
 
+const locations = {
+	WINDENBURG: "Windenburg",
+	NEWCREST: "other"
+}
+
 
 const db = {
     'Bridgerton':  {
@@ -33,10 +38,36 @@ const storyPosts = [
     'https://www.instagram.com/p/CRA44sIDLuK/?utm_source=ig_embed&amp;utm_campaign=loading',
     'https://www.instagram.com/p/CRA44sIDLuK/?utm_source=ig_embed&amp;utm_campaign=loading'
 ];
+
 const sims = {
-    'Akira Kibo': {},
-    'Karli Kibo': {},
-    'Solomon Kibo': {},
-    'Ale Caliente': {},
-    'Orren Kibo': {}
+    'Akira': {
+        'name': 'Akira Kibo',
+        'location': locations.WINDENBURG,
+        'parents': '',
+        'spouse': 'Karli'
+    },
+    'Karli': {
+        'name': 'Karli Kibo',
+        'location': locations.WINDENBURG,
+        'parents': '',
+        'spouse': 'Akira'}
+    // },
+    // 'Solomon': {
+    //     'name': 'Solomon Kibo',
+    //     'location': locations.WINDENBURG,
+    //     'parents': {
+    //         'mom': 'Karli',
+    //         'dad': 'Akira'
+    //     },
+    //     'spouse': ''
+    // },
+    // 'Orren': {
+    //     'name': 'Orren Kibo',
+    //     'location': locations.WINDENBURG,
+    //     'parents': {
+    //         'mom': 'Karli',
+    //         'dad': 'Akira'
+    //     },
+    //     'spouse': ''
+    // }
 }

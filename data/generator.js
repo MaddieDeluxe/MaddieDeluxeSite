@@ -5,10 +5,24 @@ var sectionTitle = document.getElementById('SectionTitle');
 $(document).ready(function(){
     showDownloads();
     // showBio();
+    // simBook();
 });
 
 function showBio() {
     $(aboutContent).load("/components/bio.html");
+}
+
+function simBook() {
+    sectionTitle.innerText = 'My Sims';
+    $.get("/components/simbook.html", function(content) {
+        sectionContent.innerHTML = content;
+    }).done(function(content) {
+        showProfileCards();
+    });
+}
+
+function showProfile() {
+    $(aboutContent).load("/components/profile.html");
 }
 
 function showStory() {
@@ -116,3 +130,53 @@ $('#previewModal').on('show.bs.modal', function (event) {
 
     modal.find('#previewModalCarousel').html(carouselItems);
   })
+
+
+function showProfileCards() {
+    var holder = document.getElementById('MySims');
+    for (const [key, value] of Object.entries(sims)) {
+        holder.appendChild(buildProfileCard(value, key));
+    }
+}
+
+  function buildProfileCard(sim, key) {
+    let parentNode = document.createElement('div');
+    let img = document.createElement('div');
+    let body = document.createElement('div');
+    let name = document.createElement('div');
+    let infoHolder = document.createElement('div');
+    let other = document.createElement('div');
+
+    parentNode.classList.add('tile');
+    name.innerHTML = sim.name;
+    
+
+    if (sim.location != '') {
+        let location = document.createElement('span');
+        let locationIcon = document.createElement('i');
+        locationIcon.classList.add('bi', 'bi-geo-alt-fill');
+        location.appendChild(locationIcon);
+        location.append(sim.location);
+        infoHolder.appendChild(location);
+    }
+
+    if (sim.spouse != '') {
+        let relationship = document.createElement('span');
+        let relationshipIcon = document.createElement('i');
+        relationshipIcon.classList.add('bi', 'bi-heart-fill');
+        relationship.appendChild(relationshipIcon);
+        relationship.append(sim.spouse);
+        infoHolder.appendChild(relationship);
+    }
+
+    body.appendChild(name);
+    body.appendChild(infoHolder);
+    
+    img.classList.add('pic');
+    let imgPath = 'Url(/images/ProfilePictures/' + key + '.png)';
+    img.style.backgroundImage = imgPath;
+    parentNode.appendChild(img);
+    parentNode.appendChild(body);
+
+    return parentNode;
+  }
