@@ -65,7 +65,7 @@ function generateBoard(title, terms) {
 }
 
 function handleTopic(topic) {
-    addTopic(topic.split('\r\n')[0],topic.split('\r\n')[1]);
+    addTopic(topic.split('\n')[0],topic.split('\n')[1]);
 }
 
 function handleTerm(term, index, arr) {
