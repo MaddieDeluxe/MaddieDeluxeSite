@@ -2,11 +2,16 @@ var data;
 var currentCardIndex = 0;
 var topicData = [];
 
-getChameleonFile();
+(function() {
+    getChameleonFile();
+ })();
+
+
 
 function flipCard() {
     generateBoard(topicData[currentCardIndex].title, topicData[currentCardIndex].terms);
     let currentTopic = document.getElementById('Topic'+ currentCardIndex);
+    
     currentTopic.classList.add('active');
 
     if (currentCardIndex < topicData.length) {
@@ -29,6 +34,7 @@ function getChameleonFile()
 
 function displayTopics() {
     shuffle(topicData);
+    document.getElementById('TotalTopics').innerHTML = topicData.length;
     let index = 0;
     topicData.forEach(function(topic) {
         let topicList = document.getElementById('topicList');
@@ -64,7 +70,6 @@ function handleTopic(topic) {
 
 function handleTerm(term, index, arr) {
     let t = document.createElement('div');
-    let dataDiv = document.getElementById('RandomizedData');
     t.innerHTML = term;
 
     handleTableData((index % 4 + 1), term);
@@ -87,7 +92,6 @@ function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
 
     while (currentIndex != 0) {
-
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
 
@@ -104,5 +108,11 @@ function addTopic(title, terms) {
         'terms': terms.trim()
     };
 
+    if (object.terms.split(',').length != 16) {
+        let span = document.createElement('span');
+        span.innerHTML = object.title + ' :ERROR  ' + object.terms.split(',').length + ' terms found.';
+        span.classList.add('text-danger');
+        document.getElementById('ErrorList').appendChild(span);
+    }
     topicData.push(object);
 }
