@@ -1,91 +1,102 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css" />
+    <title>Date Picker Tests</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>The Chameleon</title>
+    <div class="container">
+      
 
-  <style>
-    div#topicListDiv {
-      overflow-y: scroll;
-      max-height: 50vh;
-    }
+    
 
-    tr {
-      text-align: center;
-    }
-
-    td {
-      font-weight: bold;
-    }
-
-    th, td:nth-child(1) {
-      color: #53cfac;
-      font-weight: bold;
-      font-size: x-large;
-    }
-
-    h1#TopicTitle {
-      color: #196fb8;
-      font-weight: bold;
-      text-align: center;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container-fluid mt-3">
-    <div>
-
-      <div id="BoardHolder" class="card mt-3 rounded-0 shadow  d-none">
+    <div class="container">
+      <div class="h3">Demo</div>
+      <div class="card mb-3">
         <div class="card-body">
-          <h1 id="TopicTitle"></h1>
-          <table class="table table-borderless">
-            <thead>
-              <tr>
-                <th class="col"> </th>
-                <th class="col">A</th>
-                <th class="col">B</th>
-                <th class="col">C</th>
-                <th class="col">D</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr id="Row1"></tr>
-              <tr id="Row2" </tr>
-              <tr id="Row3"></tr>
-              <tr id="Row4"></tr>
-            </tbody>
-          </table>
+          <div class="row">
+
+            <div class="col-6">
+              <label>Start Date Min Value</label>
+              <input id="StartDateMin" type="number" class="form-control"/>
+
+              <label class="mt-3">Start Date Max Value</label>
+              <input id="StartDateMax" type="number" class="form-control"/>
+
+              <label for="startDateValueType" class="mt-3">Start Date Value Type</label>
+              <select class="form-control" id="startDateValueType">
+                <!-- <option value="0">Days</option> -->
+                <option value="1">Months</option>
+              </select>
+
+              <button type="button" onclick="setStartDateValues()" class="btn mt-3 btn-success">Set Start Date Values</button>
+            </div>
+
+            <div class="col-6">
+              <label>End Date Min Value</label>
+              <input id="EndDateMin" type="number" class="form-control"/>
+
+              <label class="mt-3">End Date Max Value</label>
+              <input id="EndDateMax" type="number" class="form-control"/>
+
+              <label for="endDateValueType" class="mt-3">End Date Value Type</label>
+              <select class="form-control" id="endDateValueType">
+                <!-- <option value="0">Days</option> -->
+                <option value="1">Months</option>
+              </select>
+
+              <button type="button" onclick="setEndDateValues()" class="btn mt-3 btn-success">Set End Date Values</button>
+            </div>
+
+          </div>
         </div>
       </div>
+        
+      <label for="StartDate1">Start Date</label>
+      <input id="StartDate1" type="month" class="form-control" />
 
-      <div class="d-flex justify-content-between mt-3">
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#topicListDiv">
-          Toggle Topics (<span id="TotalTopics"></span>)
-        </button>
-        <button id="FlipCard" onclick="flipCard()" class="btn btn-success">Flip Card</button>
-      </div>
-
-      <div class="mt-3">
-        <div id="topicListDiv" class="collapse">
-          <ul id="topicList" class="list-group mt-3"></ul>
-        </div>
-      </div>
-
+      <label for="EndDate1" class="mt-3">End Date</label>
+      <input id="EndDate1" type="month" class="form-control" />
     </div>
 
-    <div id="ErrorList" class="mt-3"></div>
-  </div>
+    <hr />
+      <div class="h3">Control (Month View)</div>
+        <p>These date pickers should be linked to one another. (Start Date and End Date must be in chronological order) 
+          They should be month/year selectors.</p>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-</body>
+        <label for="StartDate">Start Date</label>
+        <input id="StartDate" type="month" class="form-control" />
+
+        <label for="EndDate">End Date</label>
+        <input id="EndDate" type="month" class="form-control" />
+      </div>
+  </body>
 </html>
 
-<script src="data\generator.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
+<script src="DatePicker.js"></script>
+
+<script>
+  var datePicker = new FullsteamDatePicker('StartDate', 'EndDate', DatePickerType.Month);
+  var dp = new FullsteamDatePicker('StartDate1', 'EndDate1', DatePickerType.Month);
+  
+  function setStartDateValues() {
+    var type = parseInt(document.getElementById('startDateValueType').value);
+    var min = parseInt(document.getElementById('StartDateMin').value);
+    var max = parseInt(document.getElementById('StartDateMax').value);
+    dp.setDefaultMinValue(type, min);
+    dp.setDefaultMaxValue(type, max);
+  }
+
+  function setEndDateValues() {
+    var type = parseInt(document.getElementById('endDateValueType').value);
+    var min = parseInt(document.getElementById('EndDateMin').value);
+    var max = parseInt(document.getElementById('EndDateMax').value);
+    dp.setDefaultMinValue(type, min, 1);
+    dp.setDefaultMaxValue(type, max, 1);
+  }
+</script>
