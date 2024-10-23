@@ -12,6 +12,8 @@ Axel|common|
 Gene|common|
 Hendrix|common|
 Jovi|common|
+Leif|common|
+Momo|common|
 
 #Potato Pods
 ##Pretty Pod
@@ -51,8 +53,8 @@ Elder||
 #Hunting
 ##Chapaa
 Regular||
-Striped Sernuk||
-Azure Sernuk||
+Striped||
+Azure||
 
 #Hunting
 ##Muujin
@@ -74,6 +76,7 @@ Lantern Bug Plush||
 Leafy Flutterfox||
 Spring Flutterfox||
 Winter Flutterfox||
+Summer Flutterfox||
 Fall Flutterfox||
 
 
@@ -85,8 +88,12 @@ Stackable Palcat Pillow||
 Stackable Muujin Pillow||
 Stackable Chapaa Pillow||
 
-
-
+#Prize Wheel
+##
+Giant Chapaa||
+Giant Maji||
+Giant Ancient Fish||
+Worn Mouse||
 
 #Lucky Balls
 ##
