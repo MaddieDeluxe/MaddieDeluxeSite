@@ -99,8 +99,9 @@ function displayCategories() {
                 plushieContainer.append(plushieCard);
                 
                 let buttonHolder = document.createElement('div');
+                buttonHolder.classList.add('d-flex');
                 let needButton = document.createElement('button');
-                needButton.classList.add('btn','btn-sm','btn-danger','mr-2');
+                needButton.classList.add('btn','btn-sm','btn-danger','mr-1');
                 needButton.plushie = element.Name;
                 needButton.category = category;
                 needButton.subCategory = subCategory;
