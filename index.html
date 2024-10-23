@@ -11,6 +11,14 @@
           font-weight: bold;
       }
 
+      body {
+          background-color: #E5C287;
+      }
+
+      .subCategoryContainer > .card {
+        background-color: #f3eadb !important;
+      }
+
       .subCategoryContainer {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -34,43 +42,63 @@
       textarea {
         min-height: 100px;
       }
+
+      .sticky-top {
+        position: sticky;
+        z-index: 10;
+        top: 00;
+      }
+
+      .card.need {
+        background-color: #ffaaaa;
+      }
+
+      .card.have {
+        background-color: #cbddc0;
+      }
     </style>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <div class="container mb-3" style="
-        position: sticky;
-        background: white;
-        z-index: 10;
-        padding: 1rem;
-        top: 0;
-    ">
-    <div class="mb-2">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-left">
-          <h3 class="text-sm-center text-md-left">Discord Trade Template</h3>
-        </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <div class="container sticky-top">
 
-        <div class="col-md-6 d-flex justify-content-end align-items-baseline">
-          <button data-clipboard-target="#TradeTemplate" id="CopyTemplate" class="btn btn-primary mr-2">Copy Template</button>
-          <button id="ClearTemplate" onclick="clearTemplate()" class="btn btn-danger">Clear</button>
+      <div class="border-0 card my-3 rounded-0 shadow-sm">
+        <div class="card-body">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-left">
+                <h3 class="text-sm-center text-md-left">Discord Trade Template</h3>
+              </div>
+    
+              <div class="align-items-baseline col-md-6 d-flex justify-content-center justify-content-md-end">
+                <button data-clipboard-target="#TradeTemplate" id="CopyTemplate" class="btn btn-primary mr-2">Copy Template</button>
+                <button id="ClearTemplate" onclick="clearTemplate()" class="btn btn-danger">Clear</button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <textarea id="TradeTemplate" class="form-control mt-3" readonly></textarea>
+
+                <div class="d-flex justify-content-between">
+                  <small>Created by the Palia Home Tour Coalition</small>
+                  <a target="_blank" href="http://discord.gg/qNCnJpKRQm">Server Invite ❤</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
-      
-    </div>
-      <textarea id="TradeTemplate" class="form-control" readonly></textarea>
 
-      <div class="d-flex justify-content-between">
-        <small>Created by the Palia Home Tour Coalition</small>
-        <a target="_blank" href="http://discord.gg/qNCnJpKRQm">Server Invite ❤</a>
-      </div>
-      
     </div>
 
     <div id="InventoryContainer" class="container"></div>
   </body>
+  <footer class="my-3" style="height: 25px;"></footer>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
 <script src="paliaData/generator.js"></script>

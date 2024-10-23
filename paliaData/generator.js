@@ -63,6 +63,7 @@ function addCategory(lines) {
 
 function displayCategories() {
     var inventoryContainer = document.getElementById('InventoryContainer');
+    inventoryContainer.innerHTML = "";
     plushieData.forEach(element => {
         var categoryContainer = document.createElement('div');
         var categoryTitle = document.createElement('h3');
@@ -73,12 +74,13 @@ function displayCategories() {
         subCategoryContainer.classList.add('subCategoryContainer');
         element.SubCategories.forEach(element => {
             let card = document.createElement('div');
-            card.classList.add('card');
+            card.classList.add('card','shadow-sm','border-0','rounded-0');
 
             let cardBody = document.createElement('div');
             cardBody.classList.add('card-body');
 
             let subCategoryTitle = document.createElement('h6');
+            subCategoryTitle.classList.add('font-weight-bold');
             subCategoryTitle.innerText = element.SubCategory;
             var subCategory = element.SubCategory;
             cardBody.append(subCategoryTitle);
@@ -89,7 +91,9 @@ function displayCategories() {
                 let plushieCard = document.createElement('div');
                 let rarity = element.Rarity=="" ? 'unknown' : element.Rarity;
                 plushieCard.classList.add(rarity);
-                plushieCard.classList.add('card');
+                
+                let classToAdd = checkUserItemStatus(category, subCategory, element.Name);
+                plushieCard.classList.add('card','border-0','rounded-0', classToAdd);
 
                 let plushieCardBody = document.createElement('div');
                 plushieCardBody.classList.add('card-body','d-flex','justify-content-between','align-items-center');
@@ -101,7 +105,7 @@ function displayCategories() {
                 let buttonHolder = document.createElement('div');
                 buttonHolder.classList.add('d-flex');
                 let needButton = document.createElement('button');
-                needButton.classList.add('btn','btn-sm','btn-danger','mr-1');
+                needButton.classList.add('btn','btn-sm','btn-outline-danger','mr-1');
                 needButton.plushie = element.Name;
                 needButton.category = category;
                 needButton.subCategory = subCategory;
@@ -110,7 +114,7 @@ function displayCategories() {
                 needButton.innerText = 'Need';
 
                 let haveButton = document.createElement('button');
-                haveButton.classList.add('btn','btn-sm','btn-success');
+                haveButton.classList.add('btn','btn-sm','btn-outline-success','mr-1');
                 haveButton.innerText = 'Have';
                 haveButton.plushie = element.Name;
                 haveButton.category = category;
@@ -119,6 +123,16 @@ function displayCategories() {
                 haveButton.addEventListener('click',findItem);
                 buttonHolder.append(needButton);
                 buttonHolder.append(haveButton);
+
+                let clearButton = document.createElement('button');
+                clearButton.classList.add('btn','btn-sm','btn-outline-primary');
+                clearButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+                clearButton.plushie = element.Name;
+                clearButton.category = category;
+                clearButton.subCategory = subCategory;
+                clearButton.addEventListener('click',findItem);
+                clearButton.action = 'clear';
+                buttonHolder.append(clearButton);
 
                 plushieCardBody.append(buttonHolder);
             });
@@ -169,6 +183,24 @@ function findItem(event) {
     let subCategory = event.currentTarget.subCategory;
     let plushie = event.currentTarget.plushie;
     let type = event.currentTarget.action;
+
+    switch (event.currentTarget.action) {
+        case "have":
+            event.currentTarget.parentElement.parentElement.parentElement.classList.add("have");
+            event.currentTarget.parentElement.parentElement.parentElement.classList.remove("need");
+            break;
+        case "need":
+            event.currentTarget.parentElement.parentElement.parentElement.classList.add("need");
+            event.currentTarget.parentElement.parentElement.parentElement.classList.remove("have");
+            break;
+        default:
+            event.currentTarget.parentElement.parentElement.parentElement.classList.remove("need");
+            event.currentTarget.parentElement.parentElement.parentElement.classList.remove("have");
+            removeSection(0,category,subCategory,plushie);
+            removeSection(1,category,subCategory,plushie);
+            updateTemplate();
+            return;
+    }
 
     var userSectionInt = 1;
     
@@ -229,4 +261,33 @@ function clearTemplate() {
     userData[0] = [];
     userData[1] = [];
     updateTemplate();
+    displayCategories();
+}
+
+function checkUserItemStatus(category, subCategory, plushie) {
+    if (userData[0].filter(x=>x.Category==category).length > 0) {
+        var userCategory = userData[0].filter(x=>x.Category==category)[0];
+
+        if (userCategory.SubCategories.filter(x=>x.SubCategory==subCategory).length > 0) {
+            var userSubCategory = userCategory.SubCategories.filter(x=>x.SubCategory==subCategory)[0];
+
+            if (userSubCategory.Plushies.filter(x => x == plushie).length == 1) {
+                return "need";
+            }
+        }
+    }
+
+    if (userData[1].filter(x=>x.Category==category).length > 0) {
+        var userCategory = userData[1].filter(x=>x.Category==category)[0];
+
+        if (userCategory.SubCategories.filter(x=>x.SubCategory==subCategory).length > 0) {
+            var userSubCategory = userCategory.SubCategories.filter(x=>x.SubCategory==subCategory)[0];
+
+            if (userSubCategory.Plushies.filter(x => x == plushie).length == 1) {
+                return "have";
+            }
+        }
+    }
+
+    return "none";
 }
