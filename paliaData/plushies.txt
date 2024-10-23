@@ -8,6 +8,7 @@ Prickly|common|
 
 #Potato Pods
 ##Rocker Pod
+Axel|common|
 Gene|common|
 Hendrix|common|
 Jovi|common|
@@ -82,7 +83,7 @@ Sandi the Palcat Plush||
 Nox the Palcat Plush||
 Stackable Palcat Pillow||
 Stackable Muujin Pillow||
-
+Stackable Chapaa Pillow||
 
 
 
