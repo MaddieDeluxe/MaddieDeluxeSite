@@ -3,13 +3,18 @@
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Palia Trade Generator</title>
 
     <style>
+      @media screen and (max-width: 480px) {
+
+      }
+
       .subCategoryContainer {
           display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
           grid-column-gap: .5rem;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           grid-row-gap: .5rem;
           margin-bottom: .5rem;
       }
@@ -17,13 +22,17 @@
       .plushieContainer {
           display: grid;
           grid-column-gap: .5rem;
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
           grid-row-gap: .5rem;
           margin-bottom: .5rem;
       }
 
       .card-body {
           padding: .5rem;
+      }
+
+      textarea {
+        min-height: 100px;
       }
     </style>
   </head>
