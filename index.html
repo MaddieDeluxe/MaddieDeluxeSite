@@ -3,100 +3,59 @@
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css" />
-    <title>Date Picker Tests</title>
+    <title>Palia Trade Generator</title>
+
+    <style>
+      .subCategoryContainer {
+          display: grid;
+          grid-column-gap: .5rem;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-row-gap: .5rem;
+          margin-bottom: .5rem;
+      }
+
+      .plushieContainer {
+          display: grid;
+          grid-column-gap: .5rem;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-row-gap: .5rem;
+          margin-bottom: .5rem;
+      }
+
+      .card-body {
+          padding: .5rem;
+      }
+    </style>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-    <div class="container">
-      
 
     
-
-    <div class="container">
-      <div class="h3">Demo</div>
-      <div class="card mb-3">
-        <div class="card-body">
-          <div class="row">
-
-            <div class="col-6">
-              <label>Start Date Min Value</label>
-              <input id="StartDateMin" type="number" class="form-control"/>
-
-              <label class="mt-3">Start Date Max Value</label>
-              <input id="StartDateMax" type="number" class="form-control"/>
-
-              <label for="startDateValueType" class="mt-3">Start Date Value Type</label>
-              <select class="form-control" id="startDateValueType">
-                <!-- <option value="0">Days</option> -->
-                <option value="1">Months</option>
-              </select>
-
-              <button type="button" onclick="setStartDateValues()" class="btn mt-3 btn-success">Set Start Date Values</button>
-            </div>
-
-            <div class="col-6">
-              <label>End Date Min Value</label>
-              <input id="EndDateMin" type="number" class="form-control"/>
-
-              <label class="mt-3">End Date Max Value</label>
-              <input id="EndDateMax" type="number" class="form-control"/>
-
-              <label for="endDateValueType" class="mt-3">End Date Value Type</label>
-              <select class="form-control" id="endDateValueType">
-                <!-- <option value="0">Days</option> -->
-                <option value="1">Months</option>
-              </select>
-
-              <button type="button" onclick="setEndDateValues()" class="btn mt-3 btn-success">Set End Date Values</button>
-            </div>
-
-          </div>
-        </div>
+    <div class="container mb-3" style="
+        position: sticky;
+        background: white;
+        z-index: 10;
+        padding: 1rem;
+        top: 0;
+    ">
+    <div class="d-flex justify-content-between">
+      <h3>Discord Trade Template</h3>
+      <div>
+        <button data-clipboard-target="#TradeTemplate" id="CopyTemplate" class="btn btn-primary">Copy Template</button>
+        <button id="ClearTemplate" onclick="clearTemplate()" class="btn btn-danger">Clear</button>
       </div>
-        
-      <label for="StartDate1">Start Date</label>
-      <input id="StartDate1" type="month" class="form-control" />
-
-      <label for="EndDate1" class="mt-3">End Date</label>
-      <input id="EndDate1" type="month" class="form-control" />
+    </div>
+      
+      <textarea id="TradeTemplate" class="form-control" readonly></textarea>
     </div>
 
-    <hr />
-      <div class="h3">Control (Month View)</div>
-        <p>These date pickers should be linked to one another. (Start Date and End Date must be in chronological order) 
-          They should be month/year selectors.</p>
+    <div id="InventoryContainer" class="container"></div>
 
-        <label for="StartDate">Start Date</label>
-        <input id="StartDate" type="month" class="form-control" />
-
-        <label for="EndDate">End Date</label>
-        <input id="EndDate" type="month" class="form-control" />
-      </div>
+    
   </body>
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+<script src="paliaData/generator.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
-<script src="DatePicker.js"></script>
-
-<script>
-  var datePicker = new FullsteamDatePicker('StartDate', 'EndDate', DatePickerType.Month);
-  var dp = new FullsteamDatePicker('StartDate1', 'EndDate1', DatePickerType.Month);
-  
-  function setStartDateValues() {
-    var type = parseInt(document.getElementById('startDateValueType').value);
-    var min = parseInt(document.getElementById('StartDateMin').value);
-    var max = parseInt(document.getElementById('StartDateMax').value);
-    dp.setDefaultMinValue(type, min);
-    dp.setDefaultMaxValue(type, max);
-  }
-
-  function setEndDateValues() {
-    var type = parseInt(document.getElementById('endDateValueType').value);
-    var min = parseInt(document.getElementById('EndDateMin').value);
-    var max = parseInt(document.getElementById('EndDateMax').value);
-    dp.setDefaultMinValue(type, min, 1);
-    dp.setDefaultMaxValue(type, max, 1);
-  }
-</script>

@@ -1,0 +1,131 @@
+#Potato Pods
+##Potato Pod
+Junior|common|
+Mo|common|
+Whirly|common|
+Shaggy|common|
+Prickly|common|
+
+#Potato Pods
+##Rocker Pod
+Gene|common|
+Hendrix|common|
+Jovi|common|
+
+#Potato Pods
+##Pretty Pod
+Cosmo|common|
+Dorian|common|
+Dandy|common|
+Priscilla|common|
+
+#Potato Pods
+##Mer Pod
+Kelpie|common|
+Ariel|common|
+Nori|common|
+Jelly|common|
+
+#Potato Pods
+##Bonsai Pod
+Ardbert|common|
+Ashe|common|
+Autumn|common|
+Myrtle|common|
+
+#Potato Pods
+##Mush Pod
+Hopper|common|
+Sunny|common|
+Bluebell|common|
+Port|common|
+
+
+#Hunting
+##Sernuk
+Regular||
+Proudhorned||
+Elder||
+
+#Hunting
+##Chapaa
+Regular||
+Striped Sernuk||
+Azure Sernuk||
+
+#Hunting
+##Muujin
+Regular||
+Banded||
+Bluebristle||
+
+
+#Bug Catching
+##
+Lunar Fairy Moth||
+Garden Ladybug Plush||
+Proudhorned Beetle Plush||
+Lantern Bug Plush||
+
+
+#Twitch / Login Rewards
+##Flutter Fox
+Leafy Flutterfox||
+Spring Flutterfox||
+Winter Flutterfox||
+Fall Flutterfox||
+
+
+#Twitch / Login Rewards
+##Misc
+Sandi the Palcat Plush||
+Nox the Palcat Plush||
+Stackable Palcat Pillow||
+Stackable Muujin Pillow||
+
+
+
+
+
+#Lucky Balls
+##
+Me n' My Honeybunch Plush||
+Fun Guy Plushie||
+Green Cylinder||
+Ancient Kitsuu Plush||
+Ancient Fish Plush||
+Ancient Silverwing Plush||
+The Order Sernuk Plush||
+Spring Flutterfox Plush||
+Winter Flutterfox Plush||
+Ranch House Butterball||
+Ranch House Cottonbean||
+Frogbert Plush||
+
+
+#Maji Market
+##Chaapa Hut
+Fun Guy Plush||
+Embra Plush||
+Maji Plush||
+Inki Plush||
+Naanshi Plush||
+Nergaal Plush||
+Enkii Plush||
+Neena Plush||
+Mini Maji Plush||
+Chapaa Hut Pillow||
+Inki Pillow||
+Naanshi Pillow||
+Nergaal Pillow||
+Enkii Pillow||
+Neena Pillow||
+
+#Maji Market
+##Claw Machine
+Li'l Carrot||
+Li'l Beetle||
+Li'l Snail||
+Li'l Froggy||
+Li'l Sernuk||
+Li'l Turnip||
