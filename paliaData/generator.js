@@ -102,7 +102,9 @@ function displayCategories() {
                 let image = document.createElement('div');
                 image.classList.add('image');
                 image.style.backgroundImage = getImageFilename(element.Image);
-                plushieCardBody.prepend(image);
+                if(element.Image.replaceAll('\r','')!='') {
+                    plushieCardBody.prepend(image);
+                }
                 plushieCard.append(plushieCardBody);
                 plushieContainer.append(plushieCard);
                 
