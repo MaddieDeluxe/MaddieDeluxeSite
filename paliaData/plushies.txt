@@ -14,6 +14,7 @@ Hendrix|common|
 Jovi|common|
 Leif|common|
 Momo|common|
+Gerard|common|
 
 #Potato Pods
 ##Pretty Pod
