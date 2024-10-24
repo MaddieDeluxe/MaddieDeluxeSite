@@ -1,48 +1,48 @@
 #Potato Pods
 ##Potato Pod
-Junior|common|
-Mo|common|
-Whirly|common|
-Shaggy|common|
-Prickly|common|
+Junior|common|images/PotatoPods/junior.webp
+Mo|common|images/PotatoPods/mo.webp
+Whirly|common|images/PotatoPods/whirly.webp
+Shaggy|common|images/PotatoPods/shaggy.webp
+Prickly|common|images/PotatoPods/prickly.webp
 
 #Potato Pods
 ##Rocker Pod
-Axel|common|
-Gene|common|
-Hendrix|common|
-Jovi|common|
-Leif|common|
-Momo|common|
-Gerard|common|
+Axel|common|images/PotatoPods/axel.webp
+Gene|common|images/PotatoPods/gene.webp
+Hendrix|common|images/PotatoPods/hendrix.webp
+Jovi|common|images/PotatoPods/jovi.webp
+Leif|common|images/PotatoPods/leif.webp
+Momo|common|images/PotatoPods/momo.webp
+Gerard|common|images/PotatoPods/gerard.webp
 
 #Potato Pods
 ##Pretty Pod
-Cosmo|common|
-Dorian|common|
-Dandy|common|
-Priscilla|common|
+Cosmo|common|images/PotatoPods/cosmo.webp
+Dorian|common|images/PotatoPods/dorian.webp
+Dandy|common|images/PotatoPods/dandy.webp
+Priscilla|common|images/PotatoPods/priscilla.webp
 
 #Potato Pods
 ##Mer Pod
-Kelpie|common|
-Ariel|common|
-Nori|common|
-Jelly|common|
+Kelpie|common|images/PotatoPods/kelpie.webp
+Ariel|common|images/PotatoPods/ariel.webp
+Nori|common|images/PotatoPods/nori.webp
+Jelly|common|images/PotatoPods/jelly.webp
 
 #Potato Pods
 ##Bonsai Pod
-Ardbert|common|
-Ashe|common|
-Autumn|common|
-Myrtle|common|
+Ardbert|common|images/PotatoPods/ardbert.webp
+Ashe|common|images/PotatoPods/ashe.webp
+Autumn|common|images/PotatoPods/autumn.webp
+Myrtle|common|images/PotatoPods/myrtle.webp
 
 #Potato Pods
 ##Mush Pod
-Hopper|common|
-Sunny|common|
-Bluebell|common|
-Port|common|
+Hopper|common|images/PotatoPods/hopper.webp
+Sunny|common|images/PotatoPods/sunny.webp
+Bluebell|common|images/PotatoPods/bluebell.webp
+Port|common|images/PotatoPods/port.webp
 
 
 #Hunting

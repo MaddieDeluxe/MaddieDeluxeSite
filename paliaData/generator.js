@@ -99,6 +99,10 @@ function displayCategories() {
                 plushieCardBody.classList.add('card-body','d-flex','justify-content-between','align-items-center');
                 plushieCardBody.innerHTML = element.Name;
 
+                let image = document.createElement('div');
+                image.classList.add('image');
+                image.style.backgroundImage = getImageFilename(element.Image);
+                plushieCardBody.prepend(image);
                 plushieCard.append(plushieCardBody);
                 plushieContainer.append(plushieCard);
                 
@@ -290,4 +294,8 @@ function checkUserItemStatus(category, subCategory, plushie) {
     }
 
     return "none";
+}
+
+function getImageFilename(filename) {
+    return `url(${filename})`;
 }
