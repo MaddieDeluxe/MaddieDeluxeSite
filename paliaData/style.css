@@ -1,0 +1,42 @@
+.pretty {
+    background-color: #bd6b9b;
+}
+
+.mer {
+  background-color: #42b7bf;
+}
+
+.bonsai {
+    background-color: #85a380;
+}
+
+.rocker {
+    background-color: #c38bcd;
+}
+
+.potato {
+    background-color: #ca9f6e;
+}
+
+.mush {
+    background-color: #6d3c3e;
+}
+
+.badge.none {
+    background-color: cadetblue;
+}
+
+.coiny {
+    font-family: "Coiny", system-ui;
+}
+
+  
+.smallGridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, .25fr));
+    grid-column-gap: 0.25rem;
+    grid-row-gap: .25rem;
+}
+    .smallGridContainer .badge {
+        font-size: 10px;
+    }
