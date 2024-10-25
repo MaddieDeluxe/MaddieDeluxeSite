@@ -45,3 +45,89 @@
         display: block;
         white-space: normal;
     }
+
+
+.trade-background {
+    background-color: #c1c161;
+}
+
+.brand-text {
+    color: #789b80 !important;
+}
+
+
+
+h3 {
+    font-weight: bold;
+}
+
+body {
+    background-color: #E5C287;
+}
+
+.subCategoryContainer > .card {
+  background-color: #f3eadb !important;
+}
+
+.subCategoryContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: .5rem;
+    grid-row-gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.plushieContainer {
+    display: grid;
+    grid-column-gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    grid-row-gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.card-body {
+    padding: .5rem;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.card.need {
+  background-color: #ffaaaa;
+}
+
+.card.have {
+  background-color: #cbddc0;
+}
+
+.plushieContainer .image {
+  height: 25px;
+  width: 25px;
+  background-size: contain;
+  background-position: center;
+  zoom: 1.5;
+  background-repeat: no-repeat;
+}
+
+button.btn.btn-sm {
+    font-size: small;
+}
+
+.screenshotable-img {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.screenshotContainer {
+  padding: 1rem;
+}
+
+.screenshotable-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

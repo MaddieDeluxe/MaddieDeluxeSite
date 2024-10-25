@@ -13,80 +13,7 @@
     <title>Palia Trade Generator</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <style>
-      h3 {
-          font-weight: bold;
-      }
-
-      body {
-          background-color: #E5C287;
-      }
-
-      .subCategoryContainer > .card {
-        background-color: #f3eadb !important;
-      }
-
-      .subCategoryContainer {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          grid-column-gap: .5rem;
-          grid-row-gap: .5rem;
-          margin-bottom: .5rem;
-      }
-
-      .plushieContainer {
-          display: grid;
-          grid-column-gap: .5rem;
-          grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-          grid-row-gap: .5rem;
-          margin-bottom: .5rem;
-      }
-
-      .card-body {
-          padding: .5rem;
-      }
-
-      textarea {
-        min-height: 100px;
-      }
-
-      .card.need {
-        background-color: #ffaaaa;
-      }
-
-      .card.have {
-        background-color: #cbddc0;
-      }
-
-      .plushieContainer .image {
-        height: 25px;
-        width: 25px;
-        background-size: contain;
-        background-position: center;
-        zoom: 1.5;
-        background-repeat: no-repeat;
-      }
-
-      button.btn.btn-sm {
-          font-size: small;
-      }
-
-      .screenshotable-img {
-        width: 50px;
-        height: 50px;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-
-      .screenshotContainer {
-        padding: 1rem;
-      }
-
-      .screenshotable-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+      
     </style>
   </head>
   <body>
@@ -142,21 +69,22 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
-        <div class="modal-body">
+        <div class="modal-body trade-background">
           
           <div id="ScreenshotVersionImage">
 
-            <div id="LookingForContainer" class="border-0 rounded shadow-sm p-3">
-              <h4 class="coiny">Looking For</h4>
+            <div id="LookingForContainer" class="bg-light border-0 p-3 rounded shadow-sm">
+              <h4 class="coiny">Looking For <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i></h4>
               <div id="ScreenshotLookingFor" class="smallGridContainer"></div>
             </div>
 
-            <div id="ForTradeContainer" class="border-0 rounded shadow-sm p-3">
-              <h4 class="coiny">For Trade</h4>
+            <div id="ForTradeContainer" class="bg-light border-0 mt-3 p-3 rounded shadow-sm">
+              <h4 class="coiny">For Trade <i class="fa-solid fa-arrow-right-arrow-left"></i></h4>
               <div id="ScreenshotForTrade" class="smallGridContainer"></div>
             </div>
             
           </div>
+          <small class="font-italic text-secondary float-right mt-1 brand-text">Made with love by the Palia Home Tour Coalition <i class="fa-solid fa-heart"></i></small>
         </div>
 
       </div>
