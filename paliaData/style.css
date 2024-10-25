@@ -54,7 +54,7 @@
 }
 
 .brand-text {
-    color: #789b80 !important;
+    color: #fbfbfb !important;
 }
 
 
@@ -132,4 +132,9 @@ button.btn.btn-sm {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.resizable {
+    resize: both;
+    overflow: auto;
 }

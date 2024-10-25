@@ -31,13 +31,14 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-6 text-center text-md-left">
-                    <h3 class="text-sm-center text-md-left">Discord Trade Template</h3>
+                    <h3 class="text-sm-center text-md-left h5 font-weight-bold">Discord Trade Template</h3>
                   </div>
                   
                   <div class="align-items-md-center col-md-6 d-flex justify-content-center justify-content-md-end">
                     <button id="ScreenshotVersion" class="btn btn-sm btn-info mr-2" data-toggle="modal" data-target="#screenshotModal">Screenshot Friendly</button>
                     
                     <button data-toggle="collapse" href="#previewTemplate" role="button" class="btn btn-sm btn-secondary mr-2">Toggle Template</button>
+                    <button data-toggle="collapse" href="#templateSettings" role="button" class="btn btn-sm btn-secondary mr-2"><i class="fa-solid fa-gear"></i></button>
                     <button id="ClearTemplate" onclick="clearTemplate()" class="btn btn-sm btn-danger">Clear</button>
                   </div>
                 </div>
@@ -45,14 +46,32 @@
                 <div class="row">
                   <div class="col">
                     <div class="collapse text-center" id="previewTemplate">
-                      
-                      <textarea id="TradeTemplate" class="form-control my-3" readonly></textarea>
-                      <button data-clipboard-target="#TradeTemplate" id="CopyTemplate" class="btn btn-sm btn-success">Copy Template</button>
+                      <hr />
+                      <div class="text-left font-weight-bold">Copy and paste into discord</div>
+                      <textarea id="TradeTemplate" class="form-control" readonly></textarea>
+                      <button data-clipboard-target="#TradeTemplate" id="CopyTemplate" class="btn btn-sm btn-success mt-3">Copy Template</button>
                     </div>
-    
+                    
+                    <div id="templateSettings" class="collapse text-center" id="previewTemplate">
+                      <hr/>
+                      <div class="text-left font-weight-bold">Settings</div>
+                      <div class="row text-left">
+                        <div class="col-md-6">
+                          <label for="InGameName" class="m-0">In-Game Name</label>
+                          <input id="InGameName" type="text" class="form-control localSetting"/>
+
+                          <div class="form-group form-check mt-3">
+                            <input type="checkbox" class="form-check-input localSetting" id="IncludeIGN">
+                            <label class="form-check-label user-select-none" for="IncludeIGN">Include In-Game Name</label>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+
                     <div class="row mt-3">
                       <div class="col-md-6 text-center text-md-left">
-                        <small>Created by the Palia Home Tour Coalition</small>
+                        <small>Palia Home Tour Coalition</small>
                       </div>
                       <div class="col-md-6 text-center text-md-right">
                         <a target="_blank" href="http://discord.gg/qNCnJpKRQm">Server Invite ❤</a>
@@ -75,9 +94,15 @@
 
   <div class="modal fade" id="screenshotModal" tabindex="-1">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+      <div class="modal-content resizable trade-background">
+        <div>
+          <button type="button" class="close py-1 px-2" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
 
-        <div class="modal-body trade-background">
+        <div class="modal-body ">
           
           <div id="ScreenshotVersionImage">
 
@@ -92,9 +117,11 @@
             </div>
             
           </div>
-          <small class="font-italic text-secondary float-right mt-1 brand-text">Made with love by the Palia Home Tour Coalition <i class="fa-solid fa-heart"></i></small>
+          <small id="displayInGameName" class="font-weight-bold"></small>
+          <small class="font-italic text-secondary float-right mt-1 brand-text">Palia Home Tour Coalition <i class="fa-solid fa-heart"></i></small>
+        
+          
         </div>
-
       </div>
     </div>
   </div>

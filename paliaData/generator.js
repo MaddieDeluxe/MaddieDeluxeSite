@@ -16,9 +16,24 @@ var classes = ['pretty', 'rocker', 'bonsai', 'mer', 'potato', 'mush'];
     }
     new ClipboardJS('#CopyTemplate');
     getTradeData();
+
+    fillLocalSettings();
+    document.querySelectorAll('.localSetting').forEach(function(element) {
+        element.addEventListener("input", function(event) {
+            updateLocalSettings();
+            updateTemplate();
+        });
+    });
  })();
 
-
+function fillLocalSettings() {
+    document.getElementById('InGameName').value = localStorage.getItem('InGameName');
+    document.getElementById('IncludeIGN').checked = (/true/).test(localStorage.getItem('IncludeIGN'));
+}
+function updateLocalSettings() {
+    localStorage.setItem('InGameName', document.getElementById('InGameName').value);
+    localStorage.setItem('IncludeIGN', document.getElementById('IncludeIGN').checked);
+}
 
 function getTradeData()
 { 
@@ -194,8 +209,13 @@ function updateTemplate() {
     });
 
     totalTemplateString = needTemplateString + '\n' + haveTemplateString;
+    if ((/true/).test(localStorage.getItem('IncludeIGN'))) {
+        totalTemplateString += `\n:id: ${localStorage.getItem('InGameName')}` 
+    }
     localStorage.setItem('plushieData', JSON.stringify(userData));
     document.getElementById('TradeTemplate').value = totalTemplateString;
+
+
 }
 
 function findItem(event) {
@@ -326,6 +346,10 @@ function generateScreenshotVersion() {
     lookingFor.innerHTML = "";
     forTrade.innerHTML = "";
 
+    document.getElementById('displayInGameName').innerText = "";
+    if ((/true/).test(localStorage.getItem('IncludeIGN'))) {
+        document.getElementById('displayInGameName').innerText = `IGN: ${localStorage.getItem('InGameName')}`;
+    }
     userData[0].forEach(element => {
         let category = element.Category;
         element.SubCategories.forEach(element => {
