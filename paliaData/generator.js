@@ -97,7 +97,10 @@ function displayCategories() {
 
                 let plushieCardBody = document.createElement('div');
                 plushieCardBody.classList.add('card-body','d-flex','justify-content-between','align-items-center');
-                plushieCardBody.innerHTML = element.Name;
+                
+                let plushieCardText = document.createElement('span');
+                plushieCardText.classList.add('px-2');
+                plushieCardText.innerHTML = element.Name;
 
                 let image = document.createElement('div');
                 image.classList.add('image');
@@ -105,6 +108,8 @@ function displayCategories() {
                 if(element.Image.replaceAll('\r','')!='') {
                     plushieCardBody.prepend(image);
                 }
+
+                plushieCardBody.append(plushieCardText);
                 plushieCard.append(plushieCardBody);
                 plushieContainer.append(plushieCard);
                 
@@ -156,12 +161,15 @@ function displayCategories() {
 
 function updateTemplate() {
     var totalTemplateString = "";
-    var haveTemplateString = `## Up For Trade\n`;
-    var needTemplateString = `## Looking For\n`;
+    var haveTemplateString = `**For Trade :handshake:**\n`;
+    var needTemplateString = `**Looking For :mag_right:**\n`;
 
     userData[0].forEach(element => {
         needTemplateString += `**${element.Category}**\n`
         element.SubCategories.forEach(element => {
+            if(element.SubCategory=='Misc') {
+                element.SubCategory = '';
+            }
             let subCategory = element.SubCategory==''? "" : `(${element.SubCategory})`;
             element.Plushies.forEach(element => {
                 needTemplateString += `- ${element} ${subCategory}\n`
@@ -172,6 +180,9 @@ function updateTemplate() {
     userData[1].forEach(element => {
         haveTemplateString += `**${element.Category}**\n`
         element.SubCategories.forEach(element => {
+            if(element.SubCategory=='Misc') {
+                element.SubCategory = '';
+            }
             let subCategory = element.SubCategory==''? "" : `(${element.SubCategory})`;
             element.Plushies.forEach(element => {
                 haveTemplateString += `- ${element} ${subCategory}\n`

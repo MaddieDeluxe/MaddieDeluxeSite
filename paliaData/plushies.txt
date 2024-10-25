@@ -47,92 +47,92 @@ Port|common|images/PotatoPods/port.webp
 
 #Hunting
 ##Sernuk
-Regular||
-Proudhorned||
-Elder||
+Regular|common|images/Hunting/sernuk-regular.webp
+Proudhorned|epic|images/Hunting/sernuk-proud.webp
+Elder|epic|images/Hunting/sernuk-elder.webp
 
 #Hunting
 ##Chapaa
-Regular||
-Striped||
-Azure||
+Regular|common|images/Hunting/chapaa-regular.webp
+Striped|epic|images/Hunting/chapaa-striped.webp
+Azure|epic|images/Hunting/chapaa-azure.webp
 
 #Hunting
 ##Muujin
-Regular||
-Banded||
-Bluebristle||
+Regular|common|images/Hunting/muujin-regular.webp
+Banded|epic|images/Hunting/muujin-banded.webp
+Bluebristle|epic|images/Hunting/muujin-bluebristle.webp
 
 
 #Bug Catching
 ##
-Lunar Fairy Moth||
-Garden Ladybug Plush||
-Proudhorned Beetle Plush||
-Lantern Bug Plush||
+Lunar Fairy Moth||images/Hunting/bug-fairy-moth.webp
+Garden Ladybug Plush||images/Hunting/bug-garden-ladybug.webp
+Proudhorned Beetle Plush||images/Hunting/bug-proudhorned-beetle.webp
+Lantern Bug Plush||images/Hunting/bug-lantern.webp
 
 
 #Twitch / Login Rewards
 ##Flutter Fox
-Leafy Flutterfox||
-Spring Flutterfox||
-Winter Flutterfox||
-Summer Flutterfox||
-Fall Flutterfox||
+Leafy Flutterfox|rare|images/Twitch-Login/flutterfox-leafy.webp
+Spring Flutterfox|rare|images/Twitch-Login/flutterfox-spring.webp
+Winter Flutterfox|rare|images/Twitch-Login/flutterfox-winter.webp
+Summer Flutterfox|rare|images/Twitch-Login/flutterfox-summer.webp
+Fall Flutterfox|rare|images/Twitch-Login/flutterfox-fall.webp
 
 
 #Twitch / Login Rewards
 ##Misc
-Sandi the Palcat Plush||
-Nox the Palcat Plush||
-Stackable Palcat Pillow||
-Stackable Muujin Pillow||
-Stackable Chapaa Pillow||
+Sandi the Palcat Plush||images/Twitch-Login/palcat-sandi.webp
+Nox the Palcat Plush||images/Twitch-Login/palcat-nox.webp
+Stackable Palcat Pillow|rare|images/Twitch-Login/stackable-palcat.webp
+Stackable Muujin Pillow||images/Twitch-Login/stackable-muujin.webp
+Stackable Chapaa Pillow||images/Twitch-Login/stackable-chapaa.webp
 
 #Prize Wheel
 ##
-Giant Chapaa||
-Giant Maji||
-Giant Ancient Fish||
-Worn Mouse||
+Giant Chapaa|rare|images/Zeki/Wheel-giant-chapaa.webp
+Giant Maji|rare|images/Zeki/Wheel-giant-maji.webp
+Giant Ancient Fish|rare|images/Zeki/Wheel-giant-fish.webp
+Worn Mouse|common|images/Zeki/Wheel-worn-mouse.webp
 
 #Lucky Balls
 ##
-Me n' My Honeybunch Plush||
-Fun Guy Plushie||
-Green Cylinder||
-Ancient Kitsuu Plush||
-Ancient Fish Plush||
-Ancient Silverwing Plush||
-The Order Sernuk Plush||
-Ranch House Butterball||
-Ranch House Cottonbean||
-Frogbert Plush||
+Me n' My Honeybunch Plush|rare|images/Zeki/lucky-Honeybunch.webp
+Fun Guy Plushie|rare|images/Zeki/lucky-fun-guy.webp
+Green Cylinder|rare|images/Zeki/lucky-Green-Cylinder.webp
+Ancient Kitsuu Plush||images/Zeki/lucky-Ancient-Kitsuu.webp
+Ancient Fish Plush||images/Zeki/lucky-Ancient-fish.webp
+Ancient Silverwing Plush||images/Zeki/lucky-Ancient-Silverwing.webp
+The Order Sernuk Plush||images/Zeki/lucky-order-sernuk.webp
+Ranch House Butterball|rare|images/Zeki/lucky-ranch-Butterball.webp
+Ranch House Cottonbean|rare|images/Zeki/lucky-ranch-Cottonbean.webp
+Frogbert Plush||images/Zeki/lucky-Frogbert.webp
 
 
 #Maji Market
 ##Chaapa Hut
-Fun Guy Plush||
-Embra Plush||
-Maji Plush||
-Inki Plush||
-Naanshi Plush||
-Nergaal Plush||
-Enkii Plush||
-Neena Plush||
-Mini Maji Plush||
-Chapaa Hut Pillow||
-Inki Pillow||
-Naanshi Pillow||
-Nergaal Pillow||
-Enkii Pillow||
-Neena Pillow||
+Fun Guy Plush|rare|images/Market/chapaahut-fun-guy.webp
+Embra Plush|common|images/Market/chapaahut-embra.webp
+Maji Plush|common|images/Market/chapaahut-maji.webp
+Mini Maji Plush|common|images/Market/chapaahut-mini-maji.webp
+Inki Plush|common|images/Market/chapaahat-Inki.webp
+Naanshi Plush|common|images/Market/chapaahat-Naanshi.webp
+Nergaal Plush|common|images/Market/chapaahat-Nergaal.webp
+Enkii Plush|common|images/Market/chapaahat-Enkii.webp
+Neena Plush|common|images/Market/chapaahat-Neena.webp
+Chapaa Hut Pillow|common|images/Market/pillow-Chapaahut.webp
+Inki Pillow|common|images/Market/pillow-Inki.webp
+Naanshi Pillow|common|images/Market/pillow-Naanshi.webp
+Nergaal Pillow|common|images/Market/pillow-Nergaal.webp
+Enkii Pillow|common|images/Market/pillow-Enkii.webp
+Neena Pillow|common|images/Market/pillow-Neena.webp
 
 #Maji Market
 ##Claw Machine
-Li'l Carrot||
-Li'l Beetle||
-Li'l Snail||
-Li'l Froggy||
-Li'l Sernuk||
-Li'l Turnip||
+Li'l Carrot|common|images/Market/clawmachine-carrot.webp
+Li'l Beetle|common|images/Market/clawmachine-beetle.webp
+Li'l Snail|common|images/Market/clawmachine-snail.webp
+Li'l Froggy|common|images/Market/clawmachine-froggy.webp
+Li'l Sernuk|common|images/Market/clawmachine-sernuk.webp
+Li'l Turnip|common|images/Market/clawmachine-turnip.webp
