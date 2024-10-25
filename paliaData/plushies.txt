@@ -81,9 +81,12 @@ Summer|rare|images/Twitch-Login/flutterfox-summer.webp
 Fall|rare|images/Twitch-Login/flutterfox-fall.webp
 
 #Twitch / Login Rewards
-##Palcat Plush
-Sandi||images/Twitch-Login/palcat-sandi.webp
-Nox||images/Twitch-Login/palcat-nox.webp
+##
+Sandi The Palcat||images/Twitch-Login/palcat-sandi.webp
+Nox The Palcat||images/Twitch-Login/palcat-nox.webp
+Big Frogbert||images/Twitch-Login/frogbert-big.webp
+Giga Frogbert||images/Twitch-Login/frogbert-giant.webp
+Nibbles The Drake||images/Twitch-Login/drake-nibbles.webp
 
 #Twitch / Login Rewards
 ##Stackable Pillow
