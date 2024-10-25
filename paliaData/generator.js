@@ -340,7 +340,7 @@ function generateScreenshotVersion() {
 
                 let subCategoryToShow = '';
                 let customClass = 'none';
-                if(subCategory !='Misc' && element.SubCategory) {
+                if(subCategory !='Misc' && subCategory) {
                     subCategoryToShow = `(${subCategory})`;
                     if (classes.includes(subCategory.split(' ')[0].toLocaleLowerCase())) {
                         customClass = subCategory.split(' ')[0].toLocaleLowerCase();
@@ -374,7 +374,7 @@ function generateScreenshotVersion() {
 
                 let subCategoryToShow = '';
                 let customClass = 'none';
-                if(subCategory !='Misc' && element.SubCategory) {
+                if(subCategory !='Misc' && subCategory) {
                     subCategoryToShow = `(${subCategory})`;
                     if (classes.includes(subCategory.split(' ')[0].toLocaleLowerCase())) {
                         customClass = subCategory.split(' ')[0].toLocaleLowerCase();

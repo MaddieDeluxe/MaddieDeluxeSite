@@ -49,12 +49,6 @@
         min-height: 100px;
       }
 
-      .sticky-top {
-        position: sticky;
-        z-index: 10;
-        top: 00;
-      }
-
       .card.need {
         background-color: #ffaaaa;
       }
@@ -101,37 +95,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <div class="container sticky-top">
+      <div class="row">
+        <div class="col">
 
-      <div class="border-0 card my-3 rounded-0 shadow-sm">
-        <div class="card-body">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 text-center text-md-left">
-                <h3 class="text-sm-center text-md-left">Discord Trade Template</h3>
-              </div>
-    
-              <div class="align-items-center col-md-6 d-flex justify-content-center justify-content-md-end">
-                <button id="ScreenshotVersion" class="btn btn-sm btn-info mr-2" data-toggle="modal" data-target="#screenshotModal">Screenshot Friendly</button>
-                <button data-clipboard-target="#TradeTemplate" id="CopyTemplate" class="btn btn-sm btn-success mr-2">Copy Template</button>
-                <button id="ClearTemplate" onclick="clearTemplate()" class="btn btn-sm btn-danger">Clear</button>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col">
-                <textarea id="TradeTemplate" class="form-control mt-3" readonly></textarea>
-
-                <div class="d-flex justify-content-between">
-                  <small>Created by the Palia Home Tour Coalition</small>
-                  <a target="_blank" href="http://discord.gg/qNCnJpKRQm">Server Invite ❤</a>
+          <div class="border-0 card my-3 rounded-0 shadow-sm">
+            <div class="card-body">
+              
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 text-center text-md-left">
+                    <h3 class="text-sm-center text-md-left">Discord Trade Template</h3>
+                  </div>
+        
+                  <div class="align-items-center col-md-6 d-flex justify-content-center justify-content-md-end">
+                    <button id="ScreenshotVersion" class="btn btn-sm btn-info mr-2" data-toggle="modal" data-target="#screenshotModal">Screenshot Friendly</button>
+                    <button data-clipboard-target="#TradeTemplate" id="CopyTemplate" class="btn btn-sm btn-success mr-2">Copy Template</button>
+                    <button id="ClearTemplate" onclick="clearTemplate()" class="btn btn-sm btn-danger">Clear</button>
+                  </div>
                 </div>
-
+    
+                <div class="row">
+                  <div class="col">
+                    <textarea id="TradeTemplate" class="form-control mt-3" readonly></textarea>
+    
+                    <div class="d-flex justify-content-between">
+                      <small>Created by the Palia Home Tour Coalition</small>
+                      <a target="_blank" href="http://discord.gg/qNCnJpKRQm">Server Invite ❤</a>
+                    </div>
+    
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
+      
 
     </div>
 

@@ -74,20 +74,22 @@ Lantern Bug Plush||images/Hunting/bug-lantern.webp
 
 #Twitch / Login Rewards
 ##Flutter Fox
-Leafy Flutterfox|rare|images/Twitch-Login/flutterfox-leafy.webp
-Spring Flutterfox|rare|images/Twitch-Login/flutterfox-spring.webp
-Winter Flutterfox|rare|images/Twitch-Login/flutterfox-winter.webp
-Summer Flutterfox|rare|images/Twitch-Login/flutterfox-summer.webp
-Fall Flutterfox|rare|images/Twitch-Login/flutterfox-fall.webp
-
+Leafy|rare|images/Twitch-Login/flutterfox-leafy.webp
+Spring|rare|images/Twitch-Login/flutterfox-spring.webp
+Winter|rare|images/Twitch-Login/flutterfox-winter.webp
+Summer|rare|images/Twitch-Login/flutterfox-summer.webp
+Fall|rare|images/Twitch-Login/flutterfox-fall.webp
 
 #Twitch / Login Rewards
-##Misc
-Sandi the Palcat Plush||images/Twitch-Login/palcat-sandi.webp
-Nox the Palcat Plush||images/Twitch-Login/palcat-nox.webp
-Stackable Palcat Pillow|rare|images/Twitch-Login/stackable-palcat.webp
-Stackable Muujin Pillow||images/Twitch-Login/stackable-muujin.webp
-Stackable Chapaa Pillow||images/Twitch-Login/stackable-chapaa.webp
+##Palcat Plush
+Sandi||images/Twitch-Login/palcat-sandi.webp
+Nox||images/Twitch-Login/palcat-nox.webp
+
+#Twitch / Login Rewards
+##Stackable Pillow
+Palcat|rare|images/Twitch-Login/stackable-palcat.webp
+Muujin||images/Twitch-Login/stackable-muujin.webp
+Chapaa||images/Twitch-Login/stackable-chapaa.webp
 
 #Prize Wheel
 ##
