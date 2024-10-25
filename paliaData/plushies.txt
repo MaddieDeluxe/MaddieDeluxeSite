@@ -121,8 +121,8 @@ Naanshi Plush|common|images/Market/chapaahat-naanshi.webp
 Nergaal Plush|common|images/Market/chapaahat-nergaal.webp
 Enkii Plush|common|images/Market/chapaahat-enkii.webp
 Neena Plush|common|images/Market/chapaahat-neena.webp
-Chapaa Hut Pillow|common|images/Market/pillow-carrothapaahut.webp
-Inki Pillow|common|images/Market/pillow-imagesnki.webp
+Chapaa Hut Pillow|common|images/Market/pillow-chapaahut.webp
+Inki Pillow|common|images/Market/pillow-inki.webp
 Naanshi Pillow|common|images/Market/pillow-naanshi.webp
 Nergaal Pillow|common|images/Market/pillow-nergaal.webp
 Enkii Pillow|common|images/Market/pillow-enkii.webp
