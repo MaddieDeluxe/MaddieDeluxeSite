@@ -91,23 +91,23 @@ Stackable Chapaa Pillow||images/Twitch-Login/stackable-chapaa.webp
 
 #Prize Wheel
 ##
-Giant Chapaa|rare|images/Zeki/Wheel-giant-chapaa.webp
-Giant Maji|rare|images/Zeki/Wheel-giant-maji.webp
-Giant Ancient Fish|rare|images/Zeki/Wheel-giant-fish.webp
-Worn Mouse|common|images/Zeki/Wheel-worn-mouse.webp
+Giant Chapaa|rare|images/Zeki/wheel-giant-chapaa.webp
+Giant Maji|rare|images/Zeki/wheel-giant-maji.webp
+Giant Ancient Fish|rare|images/Zeki/wheel-giant-fish.webp
+Worn Mouse|common|images/Zeki/wheel-worn-mouse.webp
 
 #Lucky Balls
 ##
-Me n' My Honeybunch Plush|rare|images/Zeki/lucky-Honeybunch.webp
+Me n' My Honeybunch Plush|rare|images/Zeki/lucky-honeybunch.webp
 Fun Guy Plushie|rare|images/Zeki/lucky-fun-guy.webp
-Green Cylinder|rare|images/Zeki/lucky-Green-Cylinder.webp
-Ancient Kitsuu Plush||images/Zeki/lucky-Ancient-Kitsuu.webp
-Ancient Fish Plush||images/Zeki/lucky-Ancient-fish.webp
-Ancient Silverwing Plush||images/Zeki/lucky-Ancient-Silverwing.webp
+Green Cylinder|rare|images/Zeki/lucky-green-cylinder.webp
+Ancient Kitsuu Plush||images/Zeki/lucky-ancient-kitsuu.webp
+Ancient Fish Plush||images/Zeki/lucky-ancient-fish.webp
+Ancient Silverwing Plush||images/Zeki/lucky-ancient-silverwing.webp
 The Order Sernuk Plush||images/Zeki/lucky-order-sernuk.webp
-Ranch House Butterball|rare|images/Zeki/lucky-ranch-Butterball.webp
-Ranch House Cottonbean|rare|images/Zeki/lucky-ranch-Cottonbean.webp
-Frogbert Plush||images/Zeki/lucky-Frogbert.webp
+Ranch House Butterball|rare|images/Zeki/lucky-ranch-butterball.webp
+Ranch House Cottonbean|rare|images/Zeki/lucky-ranch-cottonbean.webp
+Frogbert Plush||images/Zeki/lucky-frogbert.webp
 
 
 #Maji Market
@@ -116,17 +116,17 @@ Fun Guy Plush|rare|images/Market/chapaahut-fun-guy.webp
 Embra Plush|common|images/Market/chapaahut-embra.webp
 Maji Plush|common|images/Market/chapaahut-maji.webp
 Mini Maji Plush|common|images/Market/chapaahut-mini-maji.webp
-Inki Plush|common|images/Market/chapaahat-Inki.webp
-Naanshi Plush|common|images/Market/chapaahat-Naanshi.webp
-Nergaal Plush|common|images/Market/chapaahat-Nergaal.webp
-Enkii Plush|common|images/Market/chapaahat-Enkii.webp
-Neena Plush|common|images/Market/chapaahat-Neena.webp
-Chapaa Hut Pillow|common|images/Market/pillow-Chapaahut.webp
-Inki Pillow|common|images/Market/pillow-Inki.webp
-Naanshi Pillow|common|images/Market/pillow-Naanshi.webp
-Nergaal Pillow|common|images/Market/pillow-Nergaal.webp
-Enkii Pillow|common|images/Market/pillow-Enkii.webp
-Neena Pillow|common|images/Market/pillow-Neena.webp
+Inki Plush|common|images/Market/chapaahat-inki.webp
+Naanshi Plush|common|images/Market/chapaahat-naanshi.webp
+Nergaal Plush|common|images/Market/chapaahat-nergaal.webp
+Enkii Plush|common|images/Market/chapaahat-enkii.webp
+Neena Plush|common|images/Market/chapaahat-neena.webp
+Chapaa Hut Pillow|common|images/Market/pillow-carrothapaahut.webp
+Inki Pillow|common|images/Market/pillow-imagesnki.webp
+Naanshi Pillow|common|images/Market/pillow-naanshi.webp
+Nergaal Pillow|common|images/Market/pillow-nergaal.webp
+Enkii Pillow|common|images/Market/pillow-enkii.webp
+Neena Pillow|common|images/Market/pillow-neena.webp
 
 #Maji Market
 ##Claw Machine
