@@ -36,6 +36,8 @@
     grid-template-columns: repeat(auto-fit, minmax(75px, .25fr));
     grid-column-gap: 0.25rem;
     grid-row-gap: .25rem;
+    align-items: end;
+    justify-content: center;
 }
     .smallGridContainer .badge {
         font-size: 10px;

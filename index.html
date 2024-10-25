@@ -33,21 +33,30 @@
                   <div class="col-md-6 text-center text-md-left">
                     <h3 class="text-sm-center text-md-left">Discord Trade Template</h3>
                   </div>
-        
-                  <div class="align-items-center col-md-6 d-flex justify-content-center justify-content-md-end">
+                  
+                  <div class="align-items-md-center col-md-6 d-flex justify-content-center justify-content-md-end">
                     <button id="ScreenshotVersion" class="btn btn-sm btn-info mr-2" data-toggle="modal" data-target="#screenshotModal">Screenshot Friendly</button>
-                    <button data-clipboard-target="#TradeTemplate" id="CopyTemplate" class="btn btn-sm btn-success mr-2">Copy Template</button>
+                    
+                    <button data-toggle="collapse" href="#previewTemplate" role="button" class="btn btn-sm btn-secondary mr-2">Toggle Template</button>
                     <button id="ClearTemplate" onclick="clearTemplate()" class="btn btn-sm btn-danger">Clear</button>
                   </div>
                 </div>
     
                 <div class="row">
                   <div class="col">
-                    <textarea id="TradeTemplate" class="form-control mt-3" readonly></textarea>
+                    <div class="collapse text-center" id="previewTemplate">
+                      
+                      <textarea id="TradeTemplate" class="form-control my-3" readonly></textarea>
+                      <button data-clipboard-target="#TradeTemplate" id="CopyTemplate" class="btn btn-sm btn-success">Copy Template</button>
+                    </div>
     
-                    <div class="d-flex justify-content-between">
-                      <small>Created by the Palia Home Tour Coalition</small>
-                      <a target="_blank" href="http://discord.gg/qNCnJpKRQm">Server Invite ❤</a>
+                    <div class="row mt-3">
+                      <div class="col-md-6 text-center text-md-left">
+                        <small>Created by the Palia Home Tour Coalition</small>
+                      </div>
+                      <div class="col-md-6 text-center text-md-right">
+                        <a target="_blank" href="http://discord.gg/qNCnJpKRQm">Server Invite ❤</a>
+                      </div>
                     </div>
     
                   </div>
@@ -58,7 +67,6 @@
 
         </div>
       </div>
-      
 
     </div>
 
