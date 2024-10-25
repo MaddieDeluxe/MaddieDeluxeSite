@@ -44,7 +44,6 @@ Sunny|common|images/PotatoPods/sunny.webp
 Bluebell|common|images/PotatoPods/bluebell.webp
 Port|common|images/PotatoPods/port.webp
 
-
 #Hunting
 ##Sernuk
 Regular|common|images/Hunting/sernuk-regular.webp
@@ -63,14 +62,12 @@ Regular|common|images/Hunting/muujin-regular.webp
 Banded|epic|images/Hunting/muujin-banded.webp
 Bluebristle|epic|images/Hunting/muujin-bluebristle.webp
 
-
 #Bug Catching
 ##
 Lunar Fairy Moth||images/Hunting/bug-fairy-moth.webp
 Garden Ladybug Plush||images/Hunting/bug-garden-ladybug.webp
 Proudhorned Beetle Plush||images/Hunting/bug-proudhorned-beetle.webp
 Lantern Bug Plush||images/Hunting/bug-lantern.webp
-
 
 #Twitch / Login Rewards
 ##Flutter Fox
@@ -114,6 +111,10 @@ Ranch House Butterball|rare|images/Zeki/lucky-ranch-butterball.webp
 Ranch House Cottonbean|rare|images/Zeki/lucky-ranch-cottonbean.webp
 Frogbert Plush||images/Zeki/lucky-frogbert.webp
 
+#Quest Rewards
+##
+Tau Plushie|rare|images/QuestRewards/tau-plushie.webp
+Ranch House Cherrytail|rare|images/QuestRewards/ranch-house-cherrytail.webp
 
 #Maji Market
 ##Chaapa Hut
