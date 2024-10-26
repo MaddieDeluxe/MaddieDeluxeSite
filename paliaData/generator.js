@@ -24,6 +24,10 @@ var classes = ['pretty', 'rocker', 'bonsai', 'mer', 'potato', 'mush'];
             updateTemplate();
         });
     });
+
+    document.getElementById('SearchTerm').addEventListener('input', function(event) {
+        displayCategories(document.getElementById('SearchTerm').value);
+    });
  })();
 
 function fillLocalSettings() {
@@ -77,18 +81,29 @@ function addCategory(lines) {
     plushieCategory['SubCategories'].push(subCategoryObject);
 }
 
-function displayCategories() {
+function displayCategories(searchTerm = "") {
     var inventoryContainer = document.getElementById('InventoryContainer');
     inventoryContainer.innerHTML = "";
+
+    
+
     plushieData.forEach(element => {
+        let categoryMatchesSearchTerm = false;
+        let subCategoriesFound = 0;
         var categoryContainer = document.createElement('div');
         var categoryTitle = document.createElement('h3');
         categoryTitle.innerText = element.Category;
         var category = element.Category;
 
+        if (category.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) {
+            categoryMatchesSearchTerm = true;
+        }
         var subCategoryContainer = document.createElement('div');
         subCategoryContainer.classList.add('subCategoryContainer');
         element.SubCategories.forEach(element => {
+            let plushiesFoundInSubCategory = 0;
+            let subCategoryMatchesSearchTerm = false;
+            
             let card = document.createElement('div');
             card.classList.add('card','shadow-sm','border-0','rounded-0');
 
@@ -99,6 +114,11 @@ function displayCategories() {
             subCategoryTitle.classList.add('font-weight-bold');
             subCategoryTitle.innerText = element.SubCategory;
             var subCategory = element.SubCategory;
+
+            if (subCategory.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) {
+                subCategoryMatchesSearchTerm = true;
+            }
+
             cardBody.append(subCategoryTitle);
 
             let plushieContainer = document.createElement('div');
@@ -127,8 +147,12 @@ function displayCategories() {
 
                 plushieCardBody.append(plushieCardText);
                 plushieCard.append(plushieCardBody);
-                plushieContainer.append(plushieCard);
-                
+                // plushieContainer.append(plushieCard);
+                if (categoryMatchesSearchTerm || subCategoryMatchesSearchTerm || element.Name.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) {
+                    plushiesFoundInSubCategory++;
+                    plushieContainer.append(plushieCard);
+                }
+
                 let buttonHolder = document.createElement('div');
                 buttonHolder.classList.add('d-flex');
                 let needButton = document.createElement('button');
@@ -163,15 +187,22 @@ function displayCategories() {
 
                 plushieCardBody.append(buttonHolder);
             });
+            
             cardBody.append(plushieContainer);
 
             card.append(cardBody);
-            subCategoryContainer.append(card);
+            
+            if (plushiesFoundInSubCategory > 0) {
+                subCategoriesFound++;
+                subCategoryContainer.append(card);
+            }
         });
 
-        categoryContainer.append(categoryTitle);
-        categoryContainer.append(subCategoryContainer);
-        inventoryContainer.append(categoryContainer);
+        if (subCategoriesFound > 0) {
+            categoryContainer.append(categoryTitle);
+            categoryContainer.append(subCategoryContainer);
+            inventoryContainer.append(categoryContainer);
+        }
     });
 }
 
@@ -414,4 +445,10 @@ function generateScreenshotVersion() {
             });
         });
     });
+}
+
+
+function clearSearch() {
+    document.getElementById('SearchTerm').value = "";
+    displayCategories();
 }
