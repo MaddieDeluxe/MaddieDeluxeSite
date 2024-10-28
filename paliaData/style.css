@@ -138,3 +138,9 @@ button.btn.btn-sm {
     resize: both;
     overflow: auto;
 }
+
+
+.container.sticky-top {
+    margin-right: auto !important;
+    padding-right: 15px !important;
+}
