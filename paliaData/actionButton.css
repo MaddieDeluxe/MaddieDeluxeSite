@@ -1,0 +1,39 @@
+ #ActionButton {
+    position: fixed;
+    bottom: .5vh;
+    left: 5vw;
+    right: 5vw;
+}
+
+#ActionButton .alert {
+    background-color: #5F9EA0;
+}
+
+#ActionButton .htm {
+    height: 75px;
+    width: 75px;
+    background-size: contain;
+    background-image: url(/images/Branding/htm.png);
+    transform: scaleX(-1);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.featured-plot {
+
+}
+
+#FeaturedPlots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, .25fr));
+    margin-top: .25rem;
+    grid-column-gap: 0.25rem;
+    grid-row-gap: .25rem;
+    align-items: end;
+    justify-content: center;
+}
+
+#ShowVoteHelp {
+    background-color: #ffb600;
+    font-weight: bold;
+}

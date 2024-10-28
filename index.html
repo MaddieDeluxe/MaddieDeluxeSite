@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css" />
     <link rel="stylesheet" href="/paliaData/style.css" />
-    
+    <link rel="stylesheet" href="/paliaData/actionButton.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
@@ -33,6 +32,7 @@
               </div>
 
               <div class="align-items-md-center col-md-6 d-flex justify-content-center justify-content-md-end mt-2 mt-md-0">
+                <button id="ShowVoteHelp" onclick="setupFeaturedPlots(true)" role="button" class="btn btn-sm btn-warning mr-2 d-none">Weekly Vote Help <i class="fa-solid fa-star"></i></button>
                 <button data-toggle="collapse" href="#templateSettings" role="button" class="btn btn-sm btn-secondary mr-2">Settings</button>
                 <button id="ClearTemplate" onclick="clearTemplate()" class="btn btn-sm btn-danger">Clear Data</button>
               </div>
@@ -77,7 +77,7 @@
                 <small class="font-italic text-secondary">Palia Home Tour Coalition</small>
               </div>
               <div class="col-md-6 text-center text-md-right">
-                <a target="_blank" href="http://discord.gg/qNCnJpKRQm">Server Invite ❤</a>
+                <a target="_blank" href="http://discord.gg/qNCnJpKRQm">Invite ❤</a>
               </div>
             </div>
           </div>
@@ -97,7 +97,6 @@
                 <div class="row">
                   <div class="align-items-md-center col d-flex justify-content-center">
                     <button id="ScreenshotVersion" class="btn btn-sm btn-info mr-2" data-toggle="modal" data-target="#screenshotModal">Screenshot Friendly</button>
-                    
                     <button data-toggle="collapse" href="#previewTemplate" role="button" class="btn btn-sm btn-secondary mr-2">Text Only</button>
                   </div>
                 </div>
@@ -179,9 +178,36 @@
     </div>
   </div>
 
+  <div id="ActionButton" class="d-none">
+    
+    <div id="FeaturedPlotsAlert" class="alert alert-dismissible alert-warning border-0 fade shadow show text-white" role="alert">
+      <div class="align-items-center d-flex flex-column flex-md-row">
+        <div class="htm"></div>
+        <div>
+          <h4 class="coiny h5 m-0">I'm the Home Tour Manager.</h4>
+          <p class="m-0 small">
+            Every week, I feature a few Palians to help them earn Tier 4 nameplates. <br/>
+            I would be greatful if you would give them a vote. ❤
+          </p>
+        </div>
+        
+        
+      </div>
+
+      <div id="FeaturedPlots"></div>
+
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+
+  
+
   <footer class="my-3" style="height: 25px;"></footer>
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+<script src="paliaData/featuredPlots.js"></script>
 <script src="paliaData/generator.js"></script>
 

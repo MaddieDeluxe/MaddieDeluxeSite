@@ -15,6 +15,7 @@ var classes = ['pretty', 'rocker', 'bonsai', 'mer', 'potato', 'mush'];
         updateTemplate();
     }
     new ClipboardJS('#CopyTemplate');
+    setupFeaturedPlots();
     getTradeData();
 
     fillLocalSettings();
