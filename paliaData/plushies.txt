@@ -1,5 +1,6 @@
 #Potato Pods
 ##Potato Pod
+Any|common|images/PotatoPods/any.webp
 Junior|common|images/PotatoPods/junior.webp
 Mo|common|images/PotatoPods/mo.webp
 Whirly|common|images/PotatoPods/whirly.webp
