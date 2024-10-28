@@ -21,25 +21,84 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <div class="container mt-3">
+      <div class="border-0 card rounded-0 shadow-sm">
+        <div class="card-body">
+          
+
+          <div class="container">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-6 text-center text-md-left">
+                <h3 class="text-sm-center text-md-left h5 font-weight-bold m-0">Discord Trade Template</h3>
+              </div>
+
+              <div class="align-items-md-center col-md-6 d-flex justify-content-center justify-content-md-end mt-2 mt-md-0">
+                <button data-toggle="collapse" href="#templateSettings" role="button" class="btn btn-sm btn-secondary mr-2">Settings</button>
+                <button id="ClearTemplate" onclick="clearTemplate()" class="btn btn-sm btn-danger">Clear Data</button>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col">
+                
+                <div id="templateSettings" class="collapse text-center" id="previewTemplate">
+                  <hr/>
+                  <div class="text-left font-weight-bold">Settings</div>
+                  <div class="row text-left">
+                    <div class="col-md-6">
+                      <label for="InGameName" class="m-0">In-Game Name</label>
+                      <input id="InGameName" type="text" class="form-control localSetting"/>
+      
+                      <div class="form-group form-check mt-3">
+                        <input type="checkbox" class="form-check-input localSetting" id="IncludeIGN">
+                        <label class="form-check-label user-select-none" for="IncludeIGN">Include In-Game Name</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 d-none">
+                      <div class="form-group">
+                        <label class="form-check-label" for="LookingForNote">Looking For Note</label>
+                        <input type="text" class="form-control localSetting" id="LookingForNote">
+      
+                        <label class="form-check-label" for="LookingForNote">For Trade Note</label>
+                        <input type="text" class="form-control localSetting" id="For Trade Note">
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row mt-1">
+              <div class="col-md-6 text-center text-md-left">
+                <small class="font-italic text-secondary">Palia Home Tour Coalition</small>
+              </div>
+              <div class="col-md-6 text-center text-md-right">
+                <a target="_blank" href="http://discord.gg/qNCnJpKRQm">Server Invite ❤</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
     <div class="container sticky-top">
       <div class="row">
         <div class="col">
 
-          <div class="border-0 card my-3 rounded-0 shadow-sm">
+          <div class="border-0 card mb-3 rounded-0 shadow-sm">
             <div class="card-body">
               
               <div class="container">
                 <div class="row">
-                  <div class="col-md-6 text-center text-md-left">
-                    <h3 class="text-sm-center text-md-left h5 font-weight-bold">Discord Trade Template</h3>
-                  </div>
-                  
-                  <div class="align-items-md-center col-md-6 d-flex justify-content-center justify-content-md-end">
+                  <div class="align-items-md-center col d-flex justify-content-center">
                     <button id="ScreenshotVersion" class="btn btn-sm btn-info mr-2" data-toggle="modal" data-target="#screenshotModal">Screenshot Friendly</button>
                     
-                    <button data-toggle="collapse" href="#previewTemplate" role="button" class="btn btn-sm btn-secondary mr-2">Toggle Template</button>
-                    <button data-toggle="collapse" href="#templateSettings" role="button" class="btn btn-sm btn-secondary mr-2"><i class="fa-solid fa-gear"></i></button>
-                    <button id="ClearTemplate" onclick="clearTemplate()" class="btn btn-sm btn-danger">Clear</button>
+                    <button data-toggle="collapse" href="#previewTemplate" role="button" class="btn btn-sm btn-secondary mr-2">Text Only</button>
                   </div>
                 </div>
     
@@ -50,32 +109,6 @@
                       <div class="text-left font-weight-bold">Copy and paste into discord</div>
                       <textarea id="TradeTemplate" class="form-control" readonly></textarea>
                       <button data-clipboard-target="#TradeTemplate" id="CopyTemplate" class="btn btn-sm btn-success mt-3">Copy Template</button>
-                    </div>
-                    
-                    <div id="templateSettings" class="collapse text-center" id="previewTemplate">
-                      <hr/>
-                      <div class="text-left font-weight-bold">Settings</div>
-                      <div class="row text-left">
-                        <div class="col-md-6">
-                          <label for="InGameName" class="m-0">In-Game Name</label>
-                          <input id="InGameName" type="text" class="form-control localSetting"/>
-
-                          <div class="form-group form-check mt-3">
-                            <input type="checkbox" class="form-check-input localSetting" id="IncludeIGN">
-                            <label class="form-check-label user-select-none" for="IncludeIGN">Include In-Game Name</label>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
-
-                    <div class="row mt-3">
-                      <div class="col-md-6 text-center text-md-left">
-                        <small>Palia Home Tour Coalition</small>
-                      </div>
-                      <div class="col-md-6 text-center text-md-right">
-                        <a target="_blank" href="http://discord.gg/qNCnJpKRQm">Server Invite ❤</a>
-                      </div>
                     </div>
     
                   </div>
@@ -97,9 +130,9 @@
 
               <label for="SearchTerm" class="font-weight-bold m-0 d-none">Search</label>
               <div class="input-group">
-                  <input id="SearchTerm" type="text" class="form-control" placeholder="Search" />
+                  <input id="SearchTerm" type="text" class="form-control form-control-sm" placeholder="Search" />
                 <div class="input-group-append">
-                  <button title="Clear Search" onclick="clearSearch()" type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-xmark"></i></button>
+                  <button title="Clear Search" onclick="clearSearch()" type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-solid fa-xmark"></i></button>
                 </div>
               </div>
 
@@ -148,6 +181,7 @@
 
   <footer class="my-3" style="height: 25px;"></footer>
 </html>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
 <script src="paliaData/generator.js"></script>
 
