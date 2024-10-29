@@ -137,6 +137,7 @@ Neena Pillow|common|images/Market/pillow-neena.webp
 
 #Maji Market
 ##Claw Machine
+Any|common|images/Market/clawmachine.webp
 Li'l Carrot|common|images/Market/clawmachine-carrot.webp
 Li'l Beetle|common|images/Market/clawmachine-beetle.webp
 Li'l Snail|common|images/Market/clawmachine-snail.webp
