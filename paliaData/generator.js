@@ -35,6 +35,7 @@ function fillLocalSettings() {
     document.getElementById('InGameName').value = localStorage.getItem('InGameName');
     document.getElementById('IncludeIGN').checked = (/true/).test(localStorage.getItem('IncludeIGN'));
 }
+
 function updateLocalSettings() {
     localStorage.setItem('InGameName', document.getElementById('InGameName').value);
     localStorage.setItem('IncludeIGN', document.getElementById('IncludeIGN').checked);
@@ -329,7 +330,7 @@ function removeSection(index,category,subCategory,plushie) {
 }
 
 function clearTemplate() {
-    localStorage.clear();
+    // localStorage.clear();
     userData[0] = [];
     userData[1] = [];
     updateTemplate();
