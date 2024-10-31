@@ -41,7 +41,6 @@
 }
     .smallGridContainer .badge {
         font-size: 10px;
-        max-width: 75px;
         word-break: break-word;
         word-wrap: break-word;
         display: block;
