@@ -5,6 +5,7 @@ var classes = ['pretty', 'rocker', 'bonsai', 'mer', 'potato', 'mush'];
 
 (function() {
     $('#screenshotModal').on('show.bs.modal',generateScreenshotVersion);
+    jQuery(window).resize(function() { auto_grow(document.getElementById('TradeNote')); });
 
     if(localStorage.getItem('plushieData')!=undefined) {
         userData = JSON.parse(localStorage.getItem('plushieData'));
@@ -35,6 +36,7 @@ function fillLocalSettings() {
     document.getElementById('InGameName').value = localStorage.getItem('InGameName');
     document.getElementById('IncludeIGN').checked = (/true/).test(localStorage.getItem('IncludeIGN'));
     document.getElementById('TradeNote').value = localStorage.getItem('TradeNote');
+    
 }
 
 function updateLocalSettings() {
@@ -458,6 +460,10 @@ function clearSearch() {
 }
 
 function toggleTradeNoteContainer(btn) {
+    setTimeout(function() {
+        auto_grow(document.getElementById('TradeNote'));
+    }, 5);
+
     if (document.getElementById('TradeNoteContainer').classList.contains('d-none')) {
         document.getElementById('TradeNoteContainer').classList.remove('d-none');
         btn.innerHTML = 'Hide Note';
@@ -466,3 +472,8 @@ function toggleTradeNoteContainer(btn) {
         btn.innerHTML = 'Show Note';
     }
 }
+
+function auto_grow(element) {
+    element.style.height = "5px";
+    element.style.height = (element.scrollHeight) + "px";
+  }
