@@ -1,6 +1,6 @@
 #Potato Pods
 ##Potato Pod
-Any|common|images/PotatoPods/any.webp
+Any|common|images/PotatoPods/any-potato.webp
 Junior|common|images/PotatoPods/junior.webp
 Mo|common|images/PotatoPods/mo.webp
 Whirly|common|images/PotatoPods/whirly.webp
@@ -85,6 +85,7 @@ Nox The Palcat||images/Twitch-Login/palcat-nox.webp
 Big Frogbert||images/Twitch-Login/frogbert-big.webp
 Giga Frogbert||images/Twitch-Login/frogbert-giant.webp
 Nibbles The Drake||images/Twitch-Login/drake-nibbles.webp
+Finding Friends Chapaa||images/Twitch-Login/referral-finding-friends-chapaa.webp
 
 #Twitch / Login Rewards
 ##Stackable Pillow
