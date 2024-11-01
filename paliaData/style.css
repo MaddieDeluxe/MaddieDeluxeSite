@@ -145,6 +145,7 @@ button.btn.btn-sm {
 }
 
 textarea#TradeNote {
+    resize: none;
     overflow: hidden;
     color: cadetblue;
     min-height: 40px;
