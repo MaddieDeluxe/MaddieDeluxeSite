@@ -34,11 +34,13 @@ var classes = ['pretty', 'rocker', 'bonsai', 'mer', 'potato', 'mush'];
 function fillLocalSettings() {
     document.getElementById('InGameName').value = localStorage.getItem('InGameName');
     document.getElementById('IncludeIGN').checked = (/true/).test(localStorage.getItem('IncludeIGN'));
+    document.getElementById('TradeNote').value = localStorage.getItem('TradeNote');
 }
 
 function updateLocalSettings() {
     localStorage.setItem('InGameName', document.getElementById('InGameName').value);
     localStorage.setItem('IncludeIGN', document.getElementById('IncludeIGN').checked);
+    localStorage.setItem('TradeNote', document.getElementById('TradeNote').value);
 }
 
 function getTradeData()
@@ -453,4 +455,14 @@ function generateScreenshotVersion() {
 function clearSearch() {
     document.getElementById('SearchTerm').value = "";
     displayCategories();
+}
+
+function toggleTradeNoteContainer(btn) {
+    if (document.getElementById('TradeNoteContainer').classList.contains('d-none')) {
+        document.getElementById('TradeNoteContainer').classList.remove('d-none');
+        btn.innerHTML = 'Hide Note';
+    } else {
+        document.getElementById('TradeNoteContainer').classList.add('d-none');
+        btn.innerHTML = 'Show Note';
+    }
 }

@@ -19,10 +19,6 @@
     background-position: center;
 }
 
-.featured-plot {
-
-}
-
 #FeaturedPlots {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, .25fr));

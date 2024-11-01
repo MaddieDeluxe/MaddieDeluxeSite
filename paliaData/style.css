@@ -143,3 +143,9 @@ button.btn.btn-sm {
     margin-right: auto !important;
     padding-right: 15px !important;
 }
+
+textarea#TradeNote {
+    color: cadetblue;
+    min-height: 40px;
+    height: 40px;
+}

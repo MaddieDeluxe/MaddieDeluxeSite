@@ -158,12 +158,16 @@
           
           <div id="ScreenshotVersionImage">
 
-            <div id="LookingForContainer" class="bg-light border-0 p-3 rounded shadow-sm">
+            <div id="LookingForContainer" class="bg-light border-0 mb-1 p-3 rounded shadow-sm">
               <h4 class="coiny">Looking For <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i></h4>
               <div id="ScreenshotLookingFor" class="smallGridContainer"></div>
             </div>
 
-            <div id="ForTradeContainer" class="bg-light border-0 mt-3 p-3 rounded shadow-sm">
+            <div id="TradeNoteContainer" class="bg-light my-1 border-0 rounded shadow-sm d-none">
+              <textarea id="TradeNote" placeholder="Add a little note about the trade." class="font-weight-bold form-control border-0 localSetting"></textarea>
+            </div>
+
+            <div id="ForTradeContainer" class="bg-light border-0 mt-1 p-3 rounded shadow-sm">
               <h4 class="coiny">For Trade <i class="fa-solid fa-arrow-right-arrow-left"></i></h4>
               <div id="ScreenshotForTrade" class="smallGridContainer"></div>
             </div>
@@ -173,6 +177,9 @@
           <small class="font-italic text-secondary float-right mt-1 brand-text">Palia Home Tour Coalition <i class="fa-solid fa-heart"></i></small>
         
           
+        </div>
+        <div class="modal-footer p-1">
+          <button onclick="toggleTradeNoteContainer(this)" role="button" class="btn btn-sm btn-light">Show Note</button>
         </div>
       </div>
     </div>
