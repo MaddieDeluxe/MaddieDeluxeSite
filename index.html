@@ -3,11 +3,13 @@
   <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="/paliaData/style.css" />
+    <link rel="stylesheet" href="/paliaData/dark-mode.css" />
     <link rel="stylesheet" href="/paliaData/actionButton.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 
+    <meta name="color-scheme" content="dark light">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Palia Trade Generator</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -44,7 +46,7 @@
                 
                 <div id="templateSettings" class="collapse text-center" id="previewTemplate">
                   <hr/>
-                  <div class="text-left font-weight-bold">Settings</div>
+                  <h3 class="text-left font-weight-bold h5">Settings</h3>
                   <div class="row text-left">
                     <div class="col-md-6">
                       <label for="InGameName" class="m-0">In-Game Name</label>
@@ -53,6 +55,11 @@
                       <div class="form-group form-check mt-3">
                         <input type="checkbox" class="form-check-input localSetting" id="IncludeIGN">
                         <label class="form-check-label user-select-none" for="IncludeIGN">Include In-Game Name</label>
+                      </div>
+
+                      <div class="form-group form-check mt-3">
+                        <input type="checkbox" class="form-check-input localSetting" id="UseDarkMode">
+                        <label class="form-check-label user-select-none" for="UseDarkMode">Dark Mode</label>
                       </div>
                     </div>
 
@@ -105,7 +112,7 @@
                   <div class="col">
                     <div class="collapse text-center" id="previewTemplate">
                       <hr />
-                      <div class="text-left font-weight-bold">Copy and paste into discord</div>
+                      <h3 class="text-left font-weight-bold">Copy and paste into discord</h3>
                       <textarea id="TradeTemplate" class="form-control" readonly></textarea>
                       <button data-clipboard-target="#TradeTemplate" id="CopyTemplate" class="btn btn-sm btn-success mt-3">Copy Template</button>
                     </div>

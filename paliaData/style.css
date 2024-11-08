@@ -30,7 +30,6 @@
     font-family: "Coiny", system-ui;
 }
 
-  
 .smallGridContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(75px, .25fr));
@@ -64,6 +63,10 @@ h3 {
 
 body {
     background-color: #E5C287;
+}
+
+textarea#TradeTemplate {
+    font-size: small;
 }
 
 .subCategoryContainer > .card {

@@ -1,0 +1,143 @@
+@media (prefers-color-scheme: dark) { 
+    :root {
+        color-scheme: only light;
+        --darkestForReal: #161615;
+        --darkest: #1e1f1c;
+        --darker: #2b2b2b;
+        --dark: #373737;
+        --text: #fff;
+        --text-secondary: #fff;
+      }
+    
+    /*WEBSITE SPECIFIC*/
+    #TradeNoteContainer textarea {
+        background-color: var(--darker) !important;
+        font-weight: 400 !important;
+    }
+    .plushieContainer .card.have {
+        border-width: 1px !important;
+        border-color: #409980 !important;
+        border-style: solid !important;
+    }
+    .plushieContainer .card.need {
+        border-width: 1px !important;
+        border-color: #9f565f  !important;
+        border-style: solid !important;
+    }
+
+    .card {
+        background-color: #2b2b2b !important;
+      }
+    
+    
+    .shadow-sm {
+        box-shadow: 0 .125rem .25rem rgb(0 0 0 / 38%) !important;
+    }
+
+    .plushieContainer .image, .screenshotable-img {
+        filter: drop-shadow(1px 1px 1px black);
+    }
+
+    .subCategoryContainer > .card {
+        background-color: #2b2b2b !important;
+      }
+
+    .plushieContainer > .card {
+        background-color: #373737 !important;
+        color: var(--text);
+      }
+      
+    /*OVERRIDES FOR BOOTSTRAP*/
+    .badge.badge-secondary {
+        background-color: var(--darkestForReal) !important;
+    }
+
+    button[class*="btn-outline"]{
+        background-color: var(--darker);
+        border: none;
+    }
+    .btn-outline-primary {
+        color: var(--text);
+    }
+    
+    .btn-outline-secondary {
+        border-radius: 0;
+        border: none;
+    }
+
+    .btn {
+        border: none;
+        color: var(--text) !important;
+    }
+
+    .btn-info {
+        background-color: #005B41 !important;
+    }
+    .btn-info:hover {
+        background-color: #002319 !important;
+    }
+
+    .btn-secondary {
+        background-color: var(--darkest) !important;
+    }
+    .btn-secondary:hover, .btn-light, .btn-light:hover {
+        background-color: var(--darkestForReal) !important;
+    }
+
+    .btn-danger {
+        background-color: #51161d !important;
+    }
+    
+    .btn-danger:hover, .btn-outline-danger:hover {
+        background-color: #390f14 !important;
+    }
+
+    .btn-success {
+        background-color: #005B41 !important;
+    }
+    .btn-success:hover, .btn-outline-success:hover {
+        background-color: #002319 !important;
+    }
+
+    .btn-warning {
+        background-color: #005B41 !important;
+    }
+    .btn-warning:hover, .btn-outline-warning:hover {
+        background-color: #002319 !important;
+    }
+
+    .btn-primary, .featured-plot {
+        background-color: #005B41 !important;
+    }
+    .btn-primary:hover, .btn-outline-primary:hover, .alert {
+        background-color: #002319 !important;
+    }
+
+    /*BS UTILITY CLASSES*/
+    .bg-light {
+        background-color: var(--darker) !important;
+    }
+
+    /*BS HTML TAGS*/
+    body, .trade-background {
+        background-color: var(--darkest) !important;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        color: var(--text) !important;
+    }
+
+    hr, .modal-footer {
+        border-color: var(--darkestForReal) !important;
+    }
+    label, a, small, .close {
+        color: var(--text) !important;
+    }
+
+    input, textarea {
+        background-color: var(--darkest) !important;
+        color: var(--text) !important;
+        border: none !important;
+        border-radius: 0 !important;
+    }
+}
