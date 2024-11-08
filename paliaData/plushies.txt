@@ -9,6 +9,7 @@ Prickly|common|images/PotatoPods/prickly.webp
 
 #Potato Pods
 ##Rocker Pod
+Any|common|images/PotatoPods/any-rocker.webp
 Axel|common|images/PotatoPods/axel.webp
 Gene|common|images/PotatoPods/gene.webp
 Hendrix|common|images/PotatoPods/hendrix.webp
@@ -19,6 +20,7 @@ Gerard|common|images/PotatoPods/gerard.webp
 
 #Potato Pods
 ##Pretty Pod
+Any|common|images/PotatoPods/any-pretty.webp
 Cosmo|common|images/PotatoPods/cosmo.webp
 Dorian|common|images/PotatoPods/dorian.webp
 Dandy|common|images/PotatoPods/dandy.webp
@@ -26,6 +28,7 @@ Priscilla|common|images/PotatoPods/priscilla.webp
 
 #Potato Pods
 ##Mer Pod
+Any|common|images/PotatoPods/any-mer.webp
 Kelpie|common|images/PotatoPods/kelpie.webp
 Ariel|common|images/PotatoPods/ariel.webp
 Nori|common|images/PotatoPods/nori.webp
@@ -33,6 +36,7 @@ Jelly|common|images/PotatoPods/jelly.webp
 
 #Potato Pods
 ##Bonsai Pod
+Any|common|images/PotatoPods/any-bonsai.webp
 Ardbert|common|images/PotatoPods/ardbert.webp
 Ashe|common|images/PotatoPods/ashe.webp
 Autumn|common|images/PotatoPods/autumn.webp
@@ -40,6 +44,7 @@ Myrtle|common|images/PotatoPods/myrtle.webp
 
 #Potato Pods
 ##Mush Pod
+Any|common|images/PotatoPods/any-mush.webp
 Hopper|common|images/PotatoPods/hopper.webp
 Sunny|common|images/PotatoPods/sunny.webp
 Bluebell|common|images/PotatoPods/bluebell.webp
