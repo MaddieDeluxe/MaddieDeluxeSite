@@ -42,7 +42,6 @@ function setupFeaturedPlots(reset = false)
     function copyFeatureName() {
         let feature = new ClipboardJS('.featured-plot');
         feature.on('success', function(e) {
-            console.info('Text:', e.text);
             e.clearSelection();
 
             e.trigger.innerText = 'copied!';
