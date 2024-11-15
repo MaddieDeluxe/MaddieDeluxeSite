@@ -30,15 +30,36 @@
           <div class="container">
             <div class="row d-flex align-items-center">
               <div class="col-md-6 text-center text-md-left">
-                <h3 class="text-sm-center text-md-left h5 font-weight-bold m-0">Discord Trade Template</h3>
+                <h3 class="text-sm-center text-md-left h3 font-weight-bold m-0">Palia Trade Template</h3>
               </div>
 
               <div class="align-items-md-center col-md-6 d-flex justify-content-center justify-content-md-end mt-2 mt-md-0">
-                <button id="ShowVoteHelp" onclick="setupFeaturedPlots(true)" role="button" class="btn btn-sm btn-warning mr-2 d-none">Weekly Vote Help <i class="fa-solid fa-star"></i></button>
                 <button data-toggle="collapse" href="#templateSettings" role="button" class="btn btn-sm btn-secondary mr-2">Settings</button>
                 <button id="ClearTemplate" onclick="clearTemplate()" class="btn btn-sm btn-danger">Clear Data</button>
               </div>
 
+              <div class="col-12">
+
+                <div id="ActionButton">
+                  <div id="FeaturedPlotsAlert" class="alert alert-warning border-0 fade show text-white mt-2" role="alert">
+                    <div class="align-items-center d-flex flex-column flex-md-row">
+                      <div class="htm"></div>
+                      <div class="w-100">
+                        <h4 class="coiny h5 m-0">I'm the Home Tour Manager.</h4>
+                        <p class="m-0 small">
+                          I would be greatful if you would these palian's a Home Tour vote. ❤
+                        </p>
+                      <div id="FeaturedPlots"></div>
+
+                      </div>
+                      
+                      
+                    </div>
+              
+                  </div>
+                </div>
+
+              </div>
             </div>
 
             <div class="row">
@@ -187,29 +208,7 @@
     </div>
   </div>
 
-  <div id="ActionButton" class="d-none">
-    
-    <div id="FeaturedPlotsAlert" class="alert alert-dismissible alert-warning border-0 fade shadow show text-white" role="alert">
-      <div class="align-items-center d-flex flex-column flex-md-row">
-        <div class="htm"></div>
-        <div>
-          <h4 class="coiny h5 m-0">I'm the Home Tour Manager.</h4>
-          <p class="m-0 small">
-            Every week, I feature a few Palians to help them earn Tier 4 nameplates. <br/>
-            I would be greatful if you would give them a vote. ❤
-          </p>
-        </div>
-        
-        
-      </div>
 
-      <div id="FeaturedPlots"></div>
-
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-  </div>
 
   
 

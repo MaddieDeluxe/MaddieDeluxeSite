@@ -7,20 +7,11 @@ function setupFeaturedPlots(reset = false)
         response.text().then(function(text) {
           let plots = text.split(/\r?\n/);
           if (plots.length > 0) {
-            if (showPlots) {
-                displayFeaturedPlots(plots);
-            }
-            document.getElementById('ShowVoteHelp').classList.remove('d-none');
+            displayFeaturedPlots(plots);
+            // document.getElementById('ShowVoteHelp').classList.remove('d-none');
           }
         });
     });   
-
-    $('#FeaturedPlotsAlert').on('close.bs.alert', function (event) {
-        event.preventDefault();
-        document.getElementById('FeaturedPlots').innerHTML = "";
-        event.currentTarget.parentElement.classList.add('d-none');
-        localStorage.setItem('HideFeaturedPlots', true);
-    });
 
     function displayFeaturedPlots(plots) {
         let actionButton = document.getElementById('ActionButton');
