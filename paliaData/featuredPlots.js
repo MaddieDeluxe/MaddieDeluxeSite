@@ -6,8 +6,9 @@ function setupFeaturedPlots(reset = false)
     fetch("./paliaData/plots.txt").then(function(response) {
         response.text().then(function(text) {
           let plots = text.split(/\r?\n/);
-          if (plots.length > 0) {
+          if (plots.length > 1) {
             displayFeaturedPlots(plots);
+            document.getElementById('ActionButton').classList.remove('d-none');
             // document.getElementById('ShowVoteHelp').classList.remove('d-none');
           }
         });
