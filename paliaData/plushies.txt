@@ -68,6 +68,13 @@ Regular|common|images/Hunting/muujin-regular.webp
 Banded|epic|images/Hunting/muujin-banded.webp
 Bluebristle|epic|images/Hunting/muujin-bluebristle.webp
 
+#Fishing
+##
+Kilima Catfish|epic|images/Hunting/kilima-catfish.webp
+Mudminnow|epic|images/Hunting/mudminnow.webp
+Red Koi|epic|images/Hunting/red-koi.webp
+Yellow Koi|epic|images/Hunting/yellow-koi.webp
+
 #Bug Catching
 ##
 Lunar Fairy Moth||images/Hunting/bug-fairy-moth.webp
