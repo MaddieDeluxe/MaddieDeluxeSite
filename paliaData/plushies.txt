@@ -101,7 +101,8 @@ Finding Friends Chapaa||images/Twitch-Login/referral-finding-friends-chapaa.webp
 
 #Twitch / Login Rewards
 ##Stackable Pillow
-Palcat|rare|images/Twitch-Login/stackable-palcat.webp
+Giant Honeybunch Plush||images/Zeki/lucky-honeybunch.webp
+Palcat||images/Twitch-Login/stackable-palcat.webp
 Muujin||images/Twitch-Login/stackable-muujin.webp
 Chapaa||images/Twitch-Login/stackable-chapaa.webp
 
