@@ -106,6 +106,10 @@ Palcat||images/Twitch-Login/stackable-palcat.webp
 Muujin||images/Twitch-Login/stackable-muujin.webp
 Chapaa||images/Twitch-Login/stackable-chapaa.webp
 
+#Collabs
+##
+Madrinas Maji Plush||images/Collabs/madrinas-dragonfruit.webp
+
 #Prize Wheel
 ##
 Giant Chapaa|rare|images/Zeki/wheel-giant-chapaa.webp
@@ -130,6 +134,10 @@ Frogbert Plush||images/Zeki/lucky-frogbert.webp
 ##
 Tau Plushie|rare|images/QuestRewards/tau-plushie.webp
 Ranch House Cherrytail|rare|images/QuestRewards/ranch-house-cherrytail.webp
+
+#New Year Market
+##
+Year of the Naga Plush||images/Market/year-of-the-naga.webp
 
 #Maji Market
 ##Chaapa Hut
