@@ -81,6 +81,8 @@ Lunar Fairy Moth||images/Hunting/bug-fairy-moth.webp
 Garden Ladybug Plush||images/Hunting/bug-garden-ladybug.webp
 Proudhorned Beetle Plush||images/Hunting/bug-proudhorned-beetle.webp
 Lantern Bug Plush||images/Hunting/bug-lantern.webp
+Garden Snail Plush||images/Hunting/garden-snail-plush.webp
+Rainbow Tipped Butterfly Plush||images/Hunting/rainbow-tipped-butterfly.webp
 
 #Twitch / Login Rewards
 ##Flutter Fox
