@@ -1,9 +1,11 @@
 var data;
+var screenshotMode = "Plushies";
 var plushieData = [];
 var userData = [];
 var classes = ['pretty', 'rocker', 'bonsai', 'mer', 'potato', 'mush'];
 
 (function() {
+    highlightModeButton(screenshotMode);
     $('#screenshotModal').on('show.bs.modal',generateScreenshotVersion);
     jQuery(window).resize(function() { auto_grow(document.getElementById('TradeNote')); });
 
@@ -16,7 +18,6 @@ var classes = ['pretty', 'rocker', 'bonsai', 'mer', 'potato', 'mush'];
         updateTemplate();
     }
     new ClipboardJS('#CopyTemplate');
-    setupFeaturedPlots();
     getTradeData();
 
     fillLocalSettings();
@@ -36,7 +37,6 @@ function fillLocalSettings() {
     document.getElementById('InGameName').value = localStorage.getItem('InGameName');
     document.getElementById('IncludeIGN').checked = (/true/).test(localStorage.getItem('IncludeIGN'));
     document.getElementById('TradeNote').value = localStorage.getItem('TradeNote');
-    
 }
 
 function updateLocalSettings() {
@@ -90,8 +90,6 @@ function addCategory(lines) {
 function displayCategories(searchTerm = "") {
     var inventoryContainer = document.getElementById('InventoryContainer');
     inventoryContainer.innerHTML = "";
-
-    
 
     plushieData.forEach(element => {
         let categoryMatchesSearchTerm = false;
@@ -339,6 +337,7 @@ function clearTemplate() {
     userData[1] = [];
     updateTemplate();
     displayCategories();
+    document.getElementById('SearchTerm').value = "";
 }
 
 function checkUserItemStatus(category, subCategory, plushie) {
@@ -387,69 +386,99 @@ function generateScreenshotVersion() {
     if ((/true/).test(localStorage.getItem('IncludeIGN'))) {
         document.getElementById('displayInGameName').innerText = `IGN: ${localStorage.getItem('InGameName')}`;
     }
+    
+    
     userData[0].forEach(element => {
         let category = element.Category;
-        element.SubCategories.forEach(element => {
-            let subCategory = element.SubCategory;
-            element.Plushies.forEach(element => {
-                let plushieNode = document.createElement('div');
-                plushieNode.classList.add('screenshotable-container');
+        
+        var categoryMatchesSearchTerm = false;
+        if (screenshotMode.toLocaleLowerCase()=="plushies"&&category.toLocaleLowerCase()!="stickers") {
+            categoryMatchesSearchTerm = true;
+        }
+        
+        if (category.toLocaleLowerCase().includes(screenshotMode.toLocaleLowerCase())) {
+            if (screenshotMode.toLocaleLowerCase()=="stickers") {
+                categoryMatchesSearchTerm = true;
+            }
+        }
 
-                let plushieImage = document.createElement('div');
-                plushieImage.classList.add('screenshotable-img');
-                plushieImage.style.backgroundImage = getImageFilename(findImageUrl(category, subCategory, element));
-
-                let subCategoryToShow = '';
-                let customClass = 'none';
-                if(subCategory !='Misc' && subCategory) {
-                    subCategoryToShow = `(${subCategory})`;
-                    if (classes.includes(subCategory.split(' ')[0].toLocaleLowerCase())) {
-                        customClass = subCategory.split(' ')[0].toLocaleLowerCase();
+        if (categoryMatchesSearchTerm) {
+            element.SubCategories.forEach(element => {
+                let subCategory = element.SubCategory;
+                element.Plushies.forEach(element => {
+                    let plushieNode = document.createElement('div');
+                    plushieNode.classList.add('screenshotable-container');
+    
+                    let plushieImage = document.createElement('div');
+                    plushieImage.classList.add('screenshotable-img');
+                    plushieImage.style.backgroundImage = getImageFilename(findImageUrl(category, subCategory, element));
+    
+                    let subCategoryToShow = '';
+                    let customClass = 'none';
+                    if(subCategory !='Misc' && subCategory) {
+                        subCategoryToShow = `(${subCategory})`;
+                        if (classes.includes(subCategory.split(' ')[0].toLocaleLowerCase())) {
+                            customClass = subCategory.split(' ')[0].toLocaleLowerCase();
+                        }
                     }
-                }
-                let nameBadge = document.createElement('span');
-                nameBadge.classList.add('badge','badge-secondary', customClass);
-                nameBadge.innerHTML = `${element}</br>${subCategoryToShow}`;
-
-                plushieNode.append(plushieImage);
-                plushieNode.append(nameBadge);
-                lookingFor.append(plushieNode);
+                    let nameBadge = document.createElement('span');
+                    nameBadge.classList.add('badge','badge-secondary', customClass);
+                    nameBadge.innerHTML = `${element}</br>${subCategoryToShow}`;
+    
+                    plushieNode.append(plushieImage);
+                    plushieNode.append(nameBadge);
+                    lookingFor.append(plushieNode);
+                });
             });
-        });
+        }
     });
 
     userData[1].forEach(element => {
         let category = element.Category;
-        element.SubCategories.forEach(element => {
-            let subCategory = element.SubCategory;
-            if(element.SubCategory=='Misc' && element.SubCategory) {
-                element.SubCategory = '';
+
+        var categoryMatchesSearchTerm = false;
+        if (screenshotMode.toLocaleLowerCase()=="plushies"&&category.toLocaleLowerCase()!="stickers") {
+            categoryMatchesSearchTerm = true;
+        }
+        
+        if (category.toLocaleLowerCase().includes(screenshotMode.toLocaleLowerCase())) {
+            if (screenshotMode.toLocaleLowerCase()=="stickers") {
+                categoryMatchesSearchTerm = true;
             }
-            element.Plushies.forEach(element => {
-                let plushieNode = document.createElement('div');
-                plushieNode.classList.add('screenshotable-container');
+        }
 
-                let plushieImage = document.createElement('div');
-                plushieImage.classList.add('screenshotable-img');
-                plushieImage.style.backgroundImage = getImageFilename(findImageUrl(category, subCategory, element));
-
-                let subCategoryToShow = '';
-                let customClass = 'none';
-                if(subCategory !='Misc' && subCategory) {
-                    subCategoryToShow = `(${subCategory})`;
-                    if (classes.includes(subCategory.split(' ')[0].toLocaleLowerCase())) {
-                        customClass = subCategory.split(' ')[0].toLocaleLowerCase();
-                    }
+        if (categoryMatchesSearchTerm) {
+            element.SubCategories.forEach(element => {
+                let subCategory = element.SubCategory;
+                if(element.SubCategory=='Misc' && element.SubCategory) {
+                    element.SubCategory = '';
                 }
-                let nameBadge = document.createElement('span');
-                nameBadge.classList.add('badge','badge-secondary', customClass);
-                nameBadge.innerHTML = `${element}</br>${subCategoryToShow}`;
-
-                plushieNode.append(plushieImage);
-                plushieNode.append(nameBadge);
-                forTrade.append(plushieNode);
+                element.Plushies.forEach(element => {
+                    let plushieNode = document.createElement('div');
+                    plushieNode.classList.add('screenshotable-container');
+    
+                    let plushieImage = document.createElement('div');
+                    plushieImage.classList.add('screenshotable-img');
+                    plushieImage.style.backgroundImage = getImageFilename(findImageUrl(category, subCategory, element));
+    
+                    let subCategoryToShow = '';
+                    let customClass = 'none';
+                    if(subCategory !='Misc' && subCategory) {
+                        subCategoryToShow = `(${subCategory})`;
+                        if (classes.includes(subCategory.split(' ')[0].toLocaleLowerCase())) {
+                            customClass = subCategory.split(' ')[0].toLocaleLowerCase();
+                        }
+                    }
+                    let nameBadge = document.createElement('span');
+                    nameBadge.classList.add('badge','badge-secondary', customClass);
+                    nameBadge.innerHTML = `${element}</br>${subCategoryToShow}`;
+    
+                    plushieNode.append(plushieImage);
+                    plushieNode.append(nameBadge);
+                    forTrade.append(plushieNode);
+                });
             });
-        });
+        }
     });
 }
 
@@ -471,6 +500,40 @@ function toggleTradeNoteContainer(btn) {
         document.getElementById('TradeNoteContainer').classList.add('d-none');
         btn.innerHTML = 'Show Note';
     }
+}
+
+function highlightModeButton(mode) {
+    screenshotMode = mode;
+    var activeButton;
+    var otherButton;
+
+    switch (mode) {
+        case "Plushies":
+            activeButton = document.getElementById('PlushieMode');
+            otherButton = document.getElementById('StickerMode');
+            break;
+        case "Stickers":
+            activeButton = document.getElementById('StickerMode');
+            otherButton = document.getElementById('PlushieMode');
+            break;
+        default:
+            break;
+    }
+    
+    activeButton.classList.add('btn-info');
+    activeButton.classList.remove('btn-light');
+
+    otherButton.classList.remove('btn-info');
+    otherButton.classList.add('btn-light');
+}
+function toggleScreenshotMode(mode) {
+    highlightModeButton(mode);
+    generateScreenshotVersion();
+}
+
+function searchStickers() {
+    document.getElementById('SearchTerm').value = "sticker";
+    displayCategories("sticker");
 }
 
 function auto_grow(element) {
