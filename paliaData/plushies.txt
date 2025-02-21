@@ -172,45 +172,45 @@ Li'l Turnip|common|images/Market/clawmachine-turnip.webp
 
 #Stickers
 ##Series 1
-Carefully Cultivated|Common|images/stickers/1/carefullycultivated.webp
-Cat's Meow|Uncommon|images/stickers/1/catsmeow.webp
-Choices, Choices|Rare|images/stickers/1/choiceschoices.webp
-Does Not Compute|Uncommon|images/stickers/1/doesnotcompute.webp
-Eyyy!|Uncommon|images/stickers/1/eyyy.webp
-Fired Up!|Common|images/stickers/1/firedup.webp
-Found It!|Common|images/stickers/1/foundit.webp
-Genius!|Common|images/stickers/1/genius.webp
-Gone Fishing!|Common|images/stickers/1/gonefishing.webp
-Gotta Run!|Common|images/stickers/1/gottarun.webp
-Great Job!|Common|images/stickers/1/greatjob.webp
-Groovin' Out|Uncommon|images/stickers/1/groovinout.webp
-Heartbroken|Uncommon|images/stickers/1/heartbroken.webp
-Here's To Me!|Uncommon|images/stickers/1/herestome.webp
-Hmm...|Common|images/stickers/1/hmm.webp
-How Delightful!|Common|images/stickers/1/howdelightful.webp
-Howdy, Partner!|Common|images/stickers/1/howdypartner.webp
-Hush|Uncommon|images/stickers/1/hush.webp
-I've Got It!|Common|images/stickers/1/ivegotit.webp
-It Me|Uncommon|images/stickers/1/itme.webp
-Just A Pinch|Rare|images/stickers/1/justapinch.webp
-Looking Stylish!|Uncommon|images/stickers/1/lookingstylish.webp
-Love It!|Common|images/stickers/1/loveit.webp
-Lumberjack|Common|images/stickers/1/lumberjack.webp
-Mouth-Watering|Common|images/stickers/1/mouthwatering.webp
-My Word!|Uncommon|images/stickers/1/myword.webp
-Nice Catch!|Common|images/stickers/1/nicecatch.webp
-Oh, Please...|Common|images/stickers/1/ohplease.webp
-Puppy Dog Eyes|Uncommon|images/stickers/1/puppydogeyes.webp
-Seriously?|Common|images/stickers/1/seriously.webp
-Smart Thinking|Common|images/stickers/1/smartthinking.webp
-Snap A Photo|Uncommon|images/stickers/1/snapaphoto.webp
-So Fierce!|Rare|images/stickers/1/sofierce.webp
-Squee!!|Uncommon|images/stickers/1/squee.webp
-Steady Aim|Common|images/stickers/1/steadyaim.webp
-Tears Of Joy|Common|images/stickers/1/tearsofjoy.webp
-That's Teamwork!|Common|images/stickers/1/thatsteamwork.webp
-This Is Fine|Rare|images/stickers/1/thisisfine.webp
-What A Drag|Uncommon|images/stickers/1/whatadrag.webp
-What In Tarnation|Uncommon|images/stickers/1/whatintarnation.webp
-Workin' The Mines|Common|images/stickers/1/workinthemines.webp
-Yay!|Common|images/stickers/1/yay.webp
+Carefully Cultivated|Common|images/Stickers/1/carefullycultivated.webp
+Cat's Meow|Uncommon|images/Stickers/1/catsmeow.webp
+Choices, Choices|Rare|images/Stickers/1/choiceschoices.webp
+Does Not Compute|Uncommon|images/Stickers/1/doesnotcompute.webp
+Eyyy!|Uncommon|images/Stickers/1/eyyy.webp
+Fired Up!|Common|images/Stickers/1/firedup.webp
+Found It!|Common|images/Stickers/1/foundit.webp
+Genius!|Common|images/Stickers/1/genius.webp
+Gone Fishing!|Common|images/Stickers/1/gonefishing.webp
+Gotta Run!|Common|images/Stickers/1/gottarun.webp
+Great Job!|Common|images/Stickers/1/greatjob.webp
+Groovin' Out|Uncommon|images/Stickers/1/groovinout.webp
+Heartbroken|Uncommon|images/Stickers/1/heartbroken.webp
+Here's To Me!|Uncommon|images/Stickers/1/herestome.webp
+Hmm...|Common|images/Stickers/1/hmm.webp
+How Delightful!|Common|images/Stickers/1/howdelightful.webp
+Howdy, Partner!|Common|images/Stickers/1/howdypartner.webp
+Hush|Uncommon|images/Stickers/1/hush.webp
+I've Got It!|Common|images/Stickers/1/ivegotit.webp
+It Me|Uncommon|images/Stickers/1/itme.webp
+Just A Pinch|Rare|images/Stickers/1/justapinch.webp
+Looking Stylish!|Uncommon|images/Stickers/1/lookingstylish.webp
+Love It!|Common|images/Stickers/1/loveit.webp
+Lumberjack|Common|images/Stickers/1/lumberjack.webp
+Mouth-Watering|Common|images/Stickers/1/mouthwatering.webp
+My Word!|Uncommon|images/Stickers/1/myword.webp
+Nice Catch!|Common|images/Stickers/1/nicecatch.webp
+Oh, Please...|Common|images/Stickers/1/ohplease.webp
+Puppy Dog Eyes|Uncommon|images/Stickers/1/puppydogeyes.webp
+Seriously?|Common|images/Stickers/1/seriously.webp
+Smart Thinking|Common|images/Stickers/1/smartthinking.webp
+Snap A Photo|Uncommon|images/Stickers/1/snapaphoto.webp
+So Fierce!|Rare|images/Stickers/1/sofierce.webp
+Squee!!|Uncommon|images/Stickers/1/squee.webp
+Steady Aim|Common|images/Stickers/1/steadyaim.webp
+Tears Of Joy|Common|images/Stickers/1/tearsofjoy.webp
+That's Teamwork!|Common|images/Stickers/1/thatsteamwork.webp
+This Is Fine|Rare|images/Stickers/1/thisisfine.webp
+What A Drag|Uncommon|images/Stickers/1/whatadrag.webp
+What In Tarnation|Uncommon|images/Stickers/1/whatintarnation.webp
+Workin' The Mines|Common|images/Stickers/1/workinthemines.webp
+Yay!|Common|images/Stickers/1/yay.webp
