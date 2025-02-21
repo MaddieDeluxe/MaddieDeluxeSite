@@ -130,7 +130,7 @@
     hr, .modal-footer {
         border-color: var(--darkestForReal) !important;
     }
-    label, a, small, .close {
+    label, a, small, .close, span {
         color: var(--text) !important;
     }
 
