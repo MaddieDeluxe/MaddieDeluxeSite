@@ -68,6 +68,18 @@ Regular|common|images/Hunting/muujin-regular.webp
 Banded|epic|images/Hunting/muujin-banded.webp
 Bluebristle|epic|images/Hunting/muujin-bluebristle.webp
 
+#Hunting
+##Ogopuu
+Regular|epic|images/Hunting/ogopuu-regular.webp
+Emerald|epic|images/Hunting/ogopuu-emerald.webp
+Waveback|epic|images/Hunting/ogopuu-waveback.webp
+
+#Hunting
+##Shmole
+Regular|epic|images/Hunting/shmole-regular.webp
+Elder|epic|images/Hunting/shmole-elder.webp
+Piksii|epic|images/Hunting/shmole-piksii.webp
+
 #Fishing
 ##
 Kilima Catfish|epic|images/Hunting/kilima-catfish.webp
@@ -99,7 +111,6 @@ Nox The Palcat||images/Twitch-Login/palcat-nox.webp
 Big Frogbert||images/Twitch-Login/frogbert-big.webp
 Giga Frogbert||images/Twitch-Login/frogbert-giant.webp
 Nibbles The Drake||images/Twitch-Login/drake-nibbles.webp
-Finding Friends Chapaa||images/Twitch-Login/referral-finding-friends-chapaa.webp
 Giant Honeybunch Plush||images/Zeki/lucky-honeybunch.webp
 
 #Twitch / Login Rewards
@@ -107,6 +118,15 @@ Giant Honeybunch Plush||images/Zeki/lucky-honeybunch.webp
 Palcat||images/Twitch-Login/stackable-palcat.webp
 Muujin||images/Twitch-Login/stackable-muujin.webp
 Chapaa||images/Twitch-Login/stackable-chapaa.webp
+
+#Referral Rewards
+##
+Finding Friends Chapaa||images/Referral/referral-finding-friends-chapaa.webp
+Elderwood Fun Guy||images/Referral/elderwood-fun-guy.webp
+Big Elderwood Fun Guy||images/Referral/elderwood-fun-guy-big.webp
+Bigger Elderwood Fun Guy||images/Referral/elderwood-fun-guy-bigger.webp
+Giant Elderwood Fun Guy||images/Referral/elderwood-fun-guy-giant.webp
+Giga Elderwood Fun Guy||images/Referral/elderwood-fun-guy-giga.webp
 
 #Collabs
 ##
