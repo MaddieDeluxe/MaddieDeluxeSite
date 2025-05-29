@@ -109,7 +109,9 @@ Fall|rare|images/Twitch-Login/flutterfox-fall.webp
 Sandi The Palcat||images/Twitch-Login/palcat-sandi.webp
 Nox The Palcat||images/Twitch-Login/palcat-nox.webp
 Big Frogbert||images/Twitch-Login/frogbert-big.webp
-Giga Frogbert||images/Twitch-Login/frogbert-giant.webp
+Bigger Frogbert||images/Twitch-Login/frogbert-bigger.webp
+Giant Frogbert||images/Twitch-Login/frogbert-giant.webp
+Giga Frogbert||images/Twitch-Login/frogbert-giga.webp
 Nibbles The Drake||images/Twitch-Login/drake-nibbles.webp
 Giant Honeybunch Plush||images/Zeki/lucky-honeybunch.webp
 
