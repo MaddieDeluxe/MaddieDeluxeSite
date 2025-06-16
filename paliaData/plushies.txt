@@ -80,12 +80,19 @@ Regular|epic|images/Hunting/shmole-regular.webp
 Elder|epic|images/Hunting/shmole-elder.webp
 Piksii|epic|images/Hunting/shmole-piksii.webp
 
+#Hunting
+##Rockhoppers
+Grumpy Granite||images/Hunting/rockhopper-grumpy-granite.webp
+Flame-Horned||images/Hunting/rockhopper-flame-horned.webp
+Will-o-Wisp||images/Hunting/rockhopper-will-o-wisp.webp
+
 #Fishing
 ##
 Kilima Catfish|epic|images/Hunting/kilima-catfish.webp
 Mudminnow|epic|images/Hunting/mudminnow.webp
 Red Koi|epic|images/Hunting/red-koi.webp
 Yellow Koi|epic|images/Hunting/yellow-koi.webp
+Prismfish||images/Hunting/prismfish.webp
 
 #Bug Catching
 ##
@@ -153,6 +160,7 @@ The Order Sernuk Plush||images/Zeki/lucky-order-sernuk.webp
 Ranch House Butterball|rare|images/Zeki/lucky-ranch-butterball.webp
 Ranch House Cottonbean|rare|images/Zeki/lucky-ranch-cottonbean.webp
 Frogbert Plush||images/Zeki/lucky-frogbert.webp
+Chatty||images/Zeki/lucky-chatty.webp
 
 #Quest Rewards
 ##
@@ -180,6 +188,7 @@ Naanshi Pillow|common|images/Market/pillow-naanshi.webp
 Nergaal Pillow|common|images/Market/pillow-nergaal.webp
 Enkii Pillow|common|images/Market/pillow-enkii.webp
 Neena Pillow|common|images/Market/pillow-neena.webp
+Rainbow Maji||images/Market/rainbow-maji-plush.webp
 
 #Maji Market
 ##Claw Machine
