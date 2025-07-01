@@ -155,3 +155,15 @@ textarea#TradeNote {
     height: 40px;
     max-height: 150px;
 }
+
+
+#ActionButton .alert {
+    background-color: #816690 !important;
+}
+
+.btn-discord {
+    background-color: #5b209a;
+}
+.btn-discord:hover {
+    background-color: #36135a !important;
+}
