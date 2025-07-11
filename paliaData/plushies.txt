@@ -129,6 +129,8 @@ Giant Frogbert||images/Twitch-Login/frogbert-giant.webp
 Giga Frogbert||images/Twitch-Login/frogbert-giga.webp
 Nibbles The Drake||images/Twitch-Login/drake-nibbles.webp
 Giant Honeybunch Plush||images/Zeki/lucky-honeybunch.webp
+Arctic Palcat||images/Twitch-Login/arctic-palcat.webp
+Island Palcat||images/Twitch-Login/island-palcat.webp
 
 #Twitch / Login Rewards
 ##Stackable Pillow
