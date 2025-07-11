@@ -86,6 +86,10 @@ Grumpy Granite||images/Hunting/rockhopper-grumpy-granite.webp
 Flame-Horned||images/Hunting/rockhopper-flame-horned.webp
 Will-o-Wisp||images/Hunting/rockhopper-will-o-wisp.webp
 
+#Other
+##Buyable In-Game
+Plushie Pool||images/Other/plushie-pool.webp
+
 #Fishing
 ##
 Kilima Catfish|epic|images/Hunting/kilima-catfish.webp
@@ -93,6 +97,10 @@ Mudminnow|epic|images/Hunting/mudminnow.webp
 Red Koi|epic|images/Hunting/red-koi.webp
 Yellow Koi|epic|images/Hunting/yellow-koi.webp
 Prismfish||images/Hunting/prismfish.webp
+River Shark||images/Hunting/river-shark.webp
+River Shark Fin||images/Hunting/river-shark-fin.webp
+Elder Shark||images/Hunting/elder-shark.webp
+Elder Shark Fin||images/Hunting/elder-shark-fin.webp
 
 #Bug Catching
 ##
@@ -161,6 +169,7 @@ Ranch House Butterball|rare|images/Zeki/lucky-ranch-butterball.webp
 Ranch House Cottonbean|rare|images/Zeki/lucky-ranch-cottonbean.webp
 Frogbert Plush||images/Zeki/lucky-frogbert.webp
 Chatty||images/Zeki/lucky-chatty.webp
+Pink Maji Dragon||images/Collabs/madrinas-dragonfruit.webp
 
 #Quest Rewards
 ##
@@ -199,6 +208,9 @@ Li'l Snail|common|images/Market/clawmachine-snail.webp
 Li'l Froggy|common|images/Market/clawmachine-froggy.webp
 Li'l Sernuk|common|images/Market/clawmachine-sernuk.webp
 Li'l Turnip|common|images/Market/clawmachine-turnip.webp
+Slumber Fox|common|images/Market/clawmachine-cutesy-kitty.webp
+Trufflet|common|images/Market/clawmachine-trufflet.webp
+Cutesy Kitty|common|images/Market/clawmachine-slumber-fox.webp
 
 
 #Stickers
