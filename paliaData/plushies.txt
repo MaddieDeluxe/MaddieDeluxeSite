@@ -210,9 +210,9 @@ Li'l Snail|common|images/Market/clawmachine-snail.webp
 Li'l Froggy|common|images/Market/clawmachine-froggy.webp
 Li'l Sernuk|common|images/Market/clawmachine-sernuk.webp
 Li'l Turnip|common|images/Market/clawmachine-turnip.webp
-Slumber Fox|common|images/Market/clawmachine-cutesy-kitty.webp
+Slumber Fox|common|images/Market/clawmachine-slumber-fox.webp
 Trufflet|common|images/Market/clawmachine-trufflet.webp
-Cutesy Kitty|common|images/Market/clawmachine-slumber-fox.webp
+Cutesy Kitty|common|images/Market/clawmachine-cutesy-kitty.webp
 
 
 #Stickers
